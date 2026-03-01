@@ -37,9 +37,9 @@ public class CosTest {
     public void testPeriod() {
         assertEquals(calculate(2*PI), calculate(0.0), delta);
         assertEquals(calculate(PI/6 + 2*PI), calculate(PI / 6), delta);
-        assertEquals(calculate(PI/4 + 2*PI), calculate(PI / 4), delta);
-        assertEquals(calculate(PI/3 + 2*PI), calculate(PI / 3), delta);
-        assertEquals(calculate(PI/2 + 2*PI), calculate(PI / 2), delta);
+        assertEquals(calculate(PI/4 - 2*PI), calculate(PI / 4), delta);
+        assertEquals(calculate(PI/3 + 10*PI), calculate(PI / 3), delta);
+        assertEquals(calculate(PI/2 - 20*PI), calculate(PI / 2), delta);
     }
 
     @Test
