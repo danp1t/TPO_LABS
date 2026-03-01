@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/danp1t/case2/BinarySearchTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/case2/BinarySearchTreeTest.java" afterDir="false" />
+    <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="Реализация бинарного дерева поиска">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/case1/CosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case1/CosTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../~$Отчет.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../~$Отчет.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../~WRL0531.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Отчет.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Отчет.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/danp1t/case2/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/danp1t/case2/BinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/case2/BinarySearchTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case2/BinarySearchTreeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,29 +32,62 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.CosTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CosTest.testCriticalPoint.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CosTest.testPeriod.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CosTest.testTable.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.BinarySearchTreeTest.executor": "Run",
+    "JUnit.BinarySearchTreeTest.testInsertDuplicate.executor": "Run",
+    "JUnit.CosTest.executor": "Run",
+    "JUnit.CosTest.testCriticalPoint.executor": "Run",
+    "JUnit.CosTest.testPeriod.executor": "Run",
+    "JUnit.CosTest.testTable.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.CosTest">
+}]]></component>
+  <component name="RunManager" selected="JUnit.BinarySearchTreeTest">
+    <configuration name="BinarySearchTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="case2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="case2" />
+      <option name="MAIN_CLASS_NAME" value="case2.BinarySearchTreeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinarySearchTreeTest.testInsertDuplicate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="case2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="case2" />
+      <option name="MAIN_CLASS_NAME" value="case2.BinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="testInsertDuplicate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CosTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <extension name="coverage">
@@ -106,28 +135,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CosTest.testTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="case1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="case1" />
-      <option name="MAIN_CLASS_NAME" value="case1.CosTest" />
-      <option name="METHOD_NAME" value="testTable" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BinarySearchTreeTest" />
+        <item itemvalue="JUnit.BinarySearchTreeTest.testInsertDuplicate" />
         <item itemvalue="JUnit.CosTest" />
         <item itemvalue="JUnit.CosTest.testCriticalPoint" />
         <item itemvalue="JUnit.CosTest.testPeriod" />
-        <item itemvalue="JUnit.CosTest.testTable" />
       </list>
     </recent_temporary>
   </component>
@@ -148,12 +162,25 @@
       <option name="presentableId" value="Default" />
       <updated>1772276719738</updated>
       <workItem from="1772276720835" duration="789000" />
-      <workItem from="1772360813637" duration="5728000" />
+      <workItem from="1772360813637" duration="7342000" />
     </task>
+    <task id="LOCAL-00001" summary="Реализация бинарного дерева поиска">
+      <option name="closed" value="true" />
+      <created>1772367962613</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1772367962613</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Реализация бинарного дерева поиска" />
+    <option name="LAST_COMMIT_MESSAGE" value="Реализация бинарного дерева поиска" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -3,13 +3,13 @@ package com.danp1t.case2;
 public class BinarySearchTree {
     private Node root;
 
-    public BinarySearchTree insert(String value) {
+    public void insert(String value) {
         value = checkValue(value);
         Node newNode = new Node(value);
 
         if (root == null) {
             root = newNode;
-            return this;
+            return;
         }
 
         Node current = root;
@@ -31,10 +31,9 @@ public class BinarySearchTree {
             parent.setLeft(newNode);
         }
 
-        return this;
     }
 
-    private void delete(String value) {
+    public void delete(String value) {
         value = checkValue(value);
         Node node = findNode(value);
         if (node == null) {
