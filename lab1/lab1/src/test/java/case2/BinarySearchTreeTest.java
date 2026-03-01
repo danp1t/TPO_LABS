@@ -131,10 +131,17 @@ public class BinarySearchTreeTest {
 
     @Test
     void testPrintWithNumbers() {
-        binarySearchTree.insert("9");
-        binarySearchTree.insert("10");
-        binarySearchTree.insert("2");
-        assertEquals("0002 0009 0010", binarySearchTree.print());
+        binarySearchTree.insert("1");
+        binarySearchTree.insert("1");
+        binarySearchTree.insert("1");
+        binarySearchTree.insert("12");
+        binarySearchTree.insert("11");
+        binarySearchTree.insert("34");
+        binarySearchTree.insert("243");
+        binarySearchTree.insert("412");
+        binarySearchTree.insert("2345");
+        binarySearchTree.insert("23");
+        assertEquals("0001 0001 0001 0011 0012 0023 0034 0243 0412 2345", binarySearchTree.print());
     }
 
     @Test

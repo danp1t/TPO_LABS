@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="Реализация бинарного дерева поиска">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/danp1t/case2/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/danp1t/case2/BinarySearchTree.java" afterDir="false" />
+    <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="test case2 done">
       <change beforePath="$PROJECT_DIR$/src/test/java/case2/BinarySearchTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case2/BinarySearchTreeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +160,7 @@
       <option name="presentableId" value="Default" />
       <updated>1772276719738</updated>
       <workItem from="1772276720835" duration="789000" />
-      <workItem from="1772360813637" duration="7342000" />
+      <workItem from="1772360813637" duration="7795000" />
     </task>
     <task id="LOCAL-00001" summary="Реализация бинарного дерева поиска">
       <option name="closed" value="true" />
@@ -172,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772367962613</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test case2 done">
+      <option name="closed" value="true" />
+      <created>1772369588694</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1772369588694</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +186,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Реализация бинарного дерева поиска" />
-    <option name="LAST_COMMIT_MESSAGE" value="Реализация бинарного дерева поиска" />
+    <MESSAGE value="test case2 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="test case2 done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
