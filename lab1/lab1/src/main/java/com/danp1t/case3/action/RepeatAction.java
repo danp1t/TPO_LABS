@@ -2,7 +2,7 @@ package com.danp1t.case3.action;
 
 import com.danp1t.case3.entity.Computer;
 import com.danp1t.case3.entity.Entity;
-import com.danp1t.case3.entity.People;
+import com.danp1t.case3.entity.Person;
 import com.danp1t.case3.types.ActionScopeType;
 import com.danp1t.case3.types.ActionTempoType;
 import com.danp1t.case3.types.ActionToneType;
@@ -33,14 +33,14 @@ public class RepeatAction extends Action {
             System.out.println(text);
         }
 
-        if (target instanceof People) {
+        if (target instanceof Person) {
             if (scope == ActionScopeType.EXTERNAL) {
                 target.incrementStressLevel(20 + count);
 
                 if (source instanceof Computer) { // ААА, ТЕРМИНАТОРЫ НАСТУПАЮТ!!! СПАСИТЕ, ПОМОГИТЕ
                     target.incrementStressLevel(100);
                 }
-                else if (source instanceof People) {
+                else if (source instanceof Person) {
                     target.incrementStressLevel(50);
                 }
 

@@ -2,7 +2,7 @@ package com.danp1t.case3.action;
 
 import com.danp1t.case3.entity.Computer;
 import com.danp1t.case3.entity.Entity;
-import com.danp1t.case3.entity.People;
+import com.danp1t.case3.entity.Person;
 import com.danp1t.case3.types.ActionScopeType;
 import com.danp1t.case3.types.ActionTempoType;
 import com.danp1t.case3.types.ActionToneType;
@@ -27,7 +27,7 @@ public class CountAction extends Action {
             System.out.println(i);
         }
 
-        if (source instanceof People && target instanceof Computer) {
+        if (source instanceof Person && target instanceof Computer) {
             if (scope == ActionScopeType.EXTERNAL) {
                 target.incrementStressLevel(20 + count);
                 if (tempo == ActionTempoType.SLOW) {

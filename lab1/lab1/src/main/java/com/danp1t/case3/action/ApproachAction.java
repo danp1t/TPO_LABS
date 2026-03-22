@@ -1,7 +1,7 @@
 package com.danp1t.case3.action;
 
 import com.danp1t.case3.entity.Entity;
-import com.danp1t.case3.entity.People;
+import com.danp1t.case3.entity.Person;
 import com.danp1t.case3.entity.Computer;
 import com.danp1t.case3.types.ActionScopeType;
 import com.danp1t.case3.types.ActionTempoType;
@@ -26,8 +26,8 @@ public class ApproachAction extends Action {
     public void execute() {
         System.out.println(source.getName() + " " + tempo.getDisplayName() + " приближался " + lightLevel + " к" + target.getName());
 
-        if (target instanceof People) {
-            if (source instanceof People) {
+        if (target instanceof Person) {
+            if (source instanceof Person) {
                 target.incrementStressLevel(50);
             }
             else if (source instanceof Computer) {
