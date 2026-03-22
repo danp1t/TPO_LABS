@@ -14,10 +14,6 @@ public class CountAction extends Action {
         this.count = count;
     }
 
-    public int getCount() {
-        return count;
-    }
-
     @Override
     public void execute() {
         System.out.println(source.getName() + " " + tempo.getDisplayName() + " считал " + scope.getDisplayName() + ":") ;

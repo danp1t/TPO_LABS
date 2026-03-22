@@ -122,7 +122,6 @@ public class DomainModelTest {
         CountAction times50 = new CountAction(
                 ActionScopeType.EXTERNAL,
                 ActionTempoType.SLOW,
-                ActionToneType.NEUTRAL,
                 person,
                 computer,
                 50
@@ -131,7 +130,6 @@ public class DomainModelTest {
         CountAction times25 = new CountAction(
                 ActionScopeType.EXTERNAL,
                 ActionTempoType.SLOW,
-                ActionToneType.NEUTRAL,
                 person2,
                 computer2,
                 25
@@ -140,7 +138,6 @@ public class DomainModelTest {
         CountAction times5 = new CountAction(
                 ActionScopeType.EXTERNAL,
                 ActionTempoType.SLOW,
-                ActionToneType.NEUTRAL,
                 person3,
                 computer3,
                 5
@@ -165,45 +162,42 @@ public class DomainModelTest {
         Computer computer3 = new Computer("Терминатор 3");
         Person person3 = new Person("Виктор");
 
-        CountAction times50 = new CountAction(
+        CountAction fast = new CountAction(
                 ActionScopeType.EXTERNAL,
                 ActionTempoType.FAST,
-                ActionToneType.NEUTRAL,
                 person,
                 computer,
                 10
         );
 
-        CountAction times25 = new CountAction(
+        CountAction medium = new CountAction(
                 ActionScopeType.EXTERNAL,
                 ActionTempoType.MEDIUM,
-                ActionToneType.NEUTRAL,
                 person2,
                 computer2,
                 10
         );
 
-        CountAction times5 = new CountAction(
+        CountAction slow = new CountAction(
                 ActionScopeType.EXTERNAL,
                 ActionTempoType.SLOW,
-                ActionToneType.NEUTRAL,
                 person3,
                 computer3,
                 10
         );
 
-        times50.execute();
-        times25.execute();
-        times5.execute();
+        fast.execute();
+        medium.execute();
+        slow.execute();
 
         assertTrue(computer.getStressLevel() < computer2.getStressLevel());
         assertTrue(computer2.getStressLevel() < computer3.getStressLevel());
 
     }
 
-    @DisplayName("Тест: при подсчете стресс компьютера зависит от тона")
+    @DisplayName("Тест: люди не боятся подсчета чисел")
     @Test
-    void stressLevelCountActionDependsOnTempoTest() {
+    void stressLevelCountActionDependsOnEntityTest() {
         Computer computer = new Computer("Терминатор");
         Person person = new Person("Иван");
         Computer computer2 = new Computer("Терминатор 2");
@@ -211,39 +205,81 @@ public class DomainModelTest {
         Computer computer3 = new Computer("Терминатор 3");
         Person person3 = new Person("Виктор");
 
-        CountAction times50 = new CountAction(
+        CountAction times50Fast = new CountAction(
                 ActionScopeType.EXTERNAL,
                 ActionTempoType.FAST,
-                ActionToneType.NEUTRAL,
-                person,
                 computer,
-                10
+                person,
+                50
         );
 
-        CountAction times25 = new CountAction(
+        CountAction times25Medium = new CountAction(
                 ActionScopeType.EXTERNAL,
                 ActionTempoType.MEDIUM,
-                ActionToneType.NEUTRAL,
-                person2,
                 computer2,
-                10
+                person2,
+                25
         );
 
-        CountAction times5 = new CountAction(
+        CountAction times5Slow = new CountAction(
                 ActionScopeType.EXTERNAL,
                 ActionTempoType.SLOW,
-                ActionToneType.NEUTRAL,
-                person3,
                 computer3,
-                10
+                person3,
+                5
         );
 
-        times50.execute();
-        times25.execute();
-        times5.execute();
+        times50Fast.execute();
+        times25Medium.execute();
+        times5Slow.execute();
 
-        assertTrue(computer.getStressLevel() < computer2.getStressLevel());
-        assertTrue(computer2.getStressLevel() < computer3.getStressLevel());
+        assertEquals(0, person.getStressLevel());
+        assertEquals(0, person2.getStressLevel());
+        assertEquals(0, person3.getStressLevel());
+
+    }
+
+    @DisplayName("Тест: подсчета про себя компьютеры не бояться")
+    @Test
+    void stressLevelCountActionDependsOnScopeTest() {
+        Computer computer = new Computer("Терминатор");
+        Person person = new Person("Иван");
+        Computer computer2 = new Computer("Терминатор 2");
+        Person person2 = new Person("Петр");
+        Computer computer3 = new Computer("Терминатор 3");
+        Person person3 = new Person("Виктор");
+
+        CountAction times50Fast = new CountAction(
+                ActionScopeType.INTERNAL,
+                ActionTempoType.FAST,
+                person,
+                computer,
+                50
+        );
+
+        CountAction times25Medium = new CountAction(
+                ActionScopeType.INTERNAL,
+                ActionTempoType.MEDIUM,
+                person2,
+                computer2,
+                25
+        );
+
+        CountAction times5Slow = new CountAction(
+                ActionScopeType.INTERNAL,
+                ActionTempoType.SLOW,
+                person3,
+                computer3,
+                5
+        );
+
+        times50Fast.execute();
+        times25Medium.execute();
+        times5Slow.execute();
+
+        assertEquals(0, computer.getStressLevel());
+        assertEquals(0, computer2.getStressLevel());
+        assertEquals(0, computer3.getStressLevel());
 
     }
 

@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="fix">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/danp1t/case3/action/ApproachAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/danp1t/case3/action/ApproachAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/danp1t/case3/action/CountAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/danp1t/case3/action/CountAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/case3/DomainModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case3/DomainModelTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,7 +165,7 @@
       <workItem from="1772276720835" duration="789000" />
       <workItem from="1772360813637" duration="8786000" />
       <workItem from="1772624576909" duration="29000" />
-      <workItem from="1774157338580" duration="9011000" />
+      <workItem from="1774157338580" duration="10193000" />
     </task>
     <task id="LOCAL-00001" summary="Реализация бинарного дерева поиска">
       <option name="closed" value="true" />
@@ -210,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774165828008</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix">
+      <option name="closed" value="true" />
+      <created>1774168167722</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1774168167722</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
