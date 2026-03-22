@@ -5,15 +5,14 @@ import com.danp1t.case3.entity.Entity;
 import com.danp1t.case3.entity.Person;
 import com.danp1t.case3.types.ActionScopeType;
 import com.danp1t.case3.types.ActionTempoType;
-import com.danp1t.case3.types.ActionToneType;
 
 public class RepeatAction extends Action {
     private final String text;
     private final int count;
 
-    public RepeatAction(ActionScopeType scope, ActionTempoType tempo, ActionToneType tone,
+    public RepeatAction(ActionScopeType scope, ActionTempoType tempo,
                         Entity source, Entity target, String text, int count) {
-        super(scope, tempo, tone, source, target);
+        super(scope, tempo, source, target);
         this.text = text;
         this.count = count;
     }
@@ -28,7 +27,7 @@ public class RepeatAction extends Action {
 
     @Override
     public void execute() {
-        System.out.println(source.getName() + " " + tone.getDisplayName() + " и " + tempo.getDisplayName() + " повторял " + scope.getDisplayName() + ":");
+        System.out.println(source.getName() + " " + tempo.getDisplayName() + " повторял " + scope.getDisplayName() + ":");
         for (int i = 0; i < count; i++) {
             System.out.println(text);
         }
@@ -52,13 +51,6 @@ public class RepeatAction extends Action {
                 }
                 else if (tempo == ActionTempoType.FAST) {
                     target.incrementStressLevel(5);
-                }
-
-                if (tone == ActionToneType.AGGRESSIVE) {
-                    target.incrementStressLevel(20 + (count * 5));
-                }
-                else if (tone == ActionToneType.BENEVOLENT) {
-                    target.decrementStressLevel(10 + (count * 3));
                 }
             }
         }

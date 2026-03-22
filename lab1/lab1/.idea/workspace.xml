@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../~$Отчет.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/danp1t/case3/action/ApproachAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/danp1t/case3/action/ApproachAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/danp1t/case3/action/CountAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/danp1t/case3/action/CountAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/case3/DomainModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case3/DomainModelTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +18,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -39,12 +42,14 @@
     "JUnit.CosTest.testCriticalPoint.executor": "Run",
     "JUnit.CosTest.testPeriod.executor": "Run",
     "JUnit.CosTest.testTable.executor": "Run",
+    "JUnit.DomainModelTest.executor": "Run",
+    "JUnit.DomainModelTest.stressLevelDependsOnLightLevelTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/github_repos/ITMO/course3/compilers/lab1/Lexer",
+    "last_opened_file_path": "D:/github_repos/TPO_LABS/lab1/lab1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -56,7 +61,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.BinarySearchTreeTest">
+  <component name="RunManager" selected="JUnit.DomainModelTest">
     <configuration name="BinarySearchTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <extension name="coverage">
@@ -103,33 +108,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CosTest.testCriticalPoint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DomainModelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="case1.*" />
+          <option name="PATTERN" value="case3.DomainModelTest" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="case1" />
-      <option name="MAIN_CLASS_NAME" value="case1.CosTest" />
-      <option name="METHOD_NAME" value="testCriticalPoint" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="case3" />
+      <option name="MAIN_CLASS_NAME" value="case3.DomainModelTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CosTest.testPeriod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DomainModelTest.stressLevelDependsOnLightLevelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="case1.*" />
+          <option name="PATTERN" value="case3.DomainModelTest" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="case1" />
-      <option name="MAIN_CLASS_NAME" value="case1.CosTest" />
-      <option name="METHOD_NAME" value="testPeriod" />
+      <option name="PACKAGE_NAME" value="case3" />
+      <option name="MAIN_CLASS_NAME" value="case3.DomainModelTest" />
+      <option name="METHOD_NAME" value="stressLevelDependsOnLightLevelTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DomainModelTest" />
+        <item itemvalue="JUnit.DomainModelTest.stressLevelDependsOnLightLevelTest" />
         <item itemvalue="JUnit.BinarySearchTreeTest" />
         <item itemvalue="JUnit.BinarySearchTreeTest.testInsertDuplicate" />
         <item itemvalue="JUnit.CosTest" />
-        <item itemvalue="JUnit.CosTest.testCriticalPoint" />
-        <item itemvalue="JUnit.CosTest.testPeriod" />
       </list>
     </recent_temporary>
   </component>
@@ -164,6 +168,7 @@
       <workItem from="1772276720835" duration="789000" />
       <workItem from="1772360813637" duration="8786000" />
       <workItem from="1772624576909" duration="29000" />
+      <workItem from="1774157338580" duration="9011000" />
     </task>
     <task id="LOCAL-00001" summary="Реализация бинарного дерева поиска">
       <option name="closed" value="true" />
@@ -189,7 +194,23 @@
       <option name="project" value="LOCAL" />
       <updated>1772369915596</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Описал доменную модель для задания 3">
+      <option name="closed" value="true" />
+      <created>1774165249807</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1774165249807</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix">
+      <option name="closed" value="true" />
+      <created>1774165828008</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1774165828008</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +219,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Реализация бинарного дерева поиска" />
     <MESSAGE value="test case2 done" />
+    <MESSAGE value="Описал доменную модель для задания 3" />
     <MESSAGE value="fix" />
     <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
