@@ -17,14 +17,6 @@ public class RepeatAction extends Action {
         this.count = count;
     }
 
-    public String getText() {
-        return text;
-    }
-
-    public int getCount() {
-        return count;
-    }
-
     @Override
     public void execute() {
         System.out.println(source.getName() + " " + tempo.getDisplayName() + " повторял " + scope.getDisplayName() + ":");
@@ -47,10 +39,10 @@ public class RepeatAction extends Action {
                     target.incrementStressLevel(10 + (count * 3));
                 }
                 else if (tempo == ActionTempoType.MEDIUM) {
-                    target.incrementStressLevel(5 + count);
+                    target.incrementStressLevel(7 + (count * 2));
                 }
                 else if (tempo == ActionTempoType.FAST) {
-                    target.incrementStressLevel(5);
+                    target.incrementStressLevel(5 + count);
                 }
             }
         }

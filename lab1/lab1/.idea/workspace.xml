@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="fix">
+    <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="Тест для CountAction">
+      <change afterPath="$PROJECT_DIR$/src/test/java/case3/ApproachActionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/case3/CountActionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/case3/RepeatActionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/danp1t/case3/action/RepeatAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/danp1t/case3/action/RepeatAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/case3/DomainModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case3/DomainModelTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +46,7 @@
     "JUnit.CosTest.testTable.executor": "Run",
     "JUnit.DomainModelTest.executor": "Run",
     "JUnit.DomainModelTest.stressLevelDependsOnLightLevelTest.executor": "Run",
+    "JUnit.DomainModelTest.stressLevelRepeatActionDependsOnEntityTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -74,37 +80,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinarySearchTreeTest.testInsertDuplicate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="case2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="case2" />
-      <option name="MAIN_CLASS_NAME" value="case2.BinarySearchTreeTest" />
-      <option name="METHOD_NAME" value="testInsertDuplicate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CosTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="case1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="case1" />
-      <option name="MAIN_CLASS_NAME" value="case1.CosTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DomainModelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <extension name="coverage">
@@ -116,6 +91,22 @@
       <option name="PACKAGE_NAME" value="case3" />
       <option name="MAIN_CLASS_NAME" value="case3.DomainModelTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DomainModelTest.equivalentActionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="case3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="case3" />
+      <option name="MAIN_CLASS_NAME" value="case3.DomainModelTest" />
+      <option name="METHOD_NAME" value="equivalentActionTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,13 +127,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DomainModelTest.stressLevelRepeatActionDependsOnEntityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="case3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="case3" />
+      <option name="MAIN_CLASS_NAME" value="case3.DomainModelTest" />
+      <option name="METHOD_NAME" value="stressLevelRepeatActionDependsOnEntityTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.DomainModelTest" />
+        <item itemvalue="JUnit.DomainModelTest.equivalentActionTest" />
+        <item itemvalue="JUnit.DomainModelTest.stressLevelRepeatActionDependsOnEntityTest" />
         <item itemvalue="JUnit.DomainModelTest.stressLevelDependsOnLightLevelTest" />
         <item itemvalue="JUnit.BinarySearchTreeTest" />
-        <item itemvalue="JUnit.BinarySearchTreeTest.testInsertDuplicate" />
-        <item itemvalue="JUnit.CosTest" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +172,7 @@
       <workItem from="1772276720835" duration="789000" />
       <workItem from="1772360813637" duration="8786000" />
       <workItem from="1772624576909" duration="29000" />
-      <workItem from="1774157338580" duration="10193000" />
+      <workItem from="1774157338580" duration="12363000" />
     </task>
     <task id="LOCAL-00001" summary="Реализация бинарного дерева поиска">
       <option name="closed" value="true" />
@@ -215,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774168167722</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Тест для CountAction">
+      <option name="closed" value="true" />
+      <created>1774169085585</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1774169085585</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +241,8 @@
     <MESSAGE value="test case2 done" />
     <MESSAGE value="Описал доменную модель для задания 3" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="Тест для CountAction" />
+    <option name="LAST_COMMIT_MESSAGE" value="Тест для CountAction" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
