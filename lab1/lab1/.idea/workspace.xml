@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="fix">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/danp1t/case2/OurHashMap.java" afterDir="false" />
+    <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="fix case 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/danp1t/case2/BinarySearchTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/case2/BinarySearchTreeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/danp1t/case3/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/danp1t/case3/entity/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/case2/MyHashMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case2/MyHashMapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Отчет.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Отчет.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +48,8 @@
     "JUnit.DomainModelTest.executor": "Run",
     "JUnit.DomainModelTest.stressLevelDependsOnLightLevelTest.executor": "Run",
     "JUnit.DomainModelTest.stressLevelRepeatActionDependsOnEntityTest.executor": "Run",
+    "JUnit.MyHashMapTest.executor": "Run",
+    "JUnit.MyHashMapTest.testDelete.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -65,7 +67,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.All in lab1">
+  <component name="RunManager" selected="JUnit.MyHashMapTest">
     <configuration name="All in lab1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <option name="PACKAGE_NAME" value="" />
@@ -105,32 +107,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DomainModelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyHashMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="case3.DomainModelTest" />
+          <option name="PATTERN" value="case2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="case3" />
-      <option name="MAIN_CLASS_NAME" value="case3.DomainModelTest" />
+      <option name="PACKAGE_NAME" value="case2" />
+      <option name="MAIN_CLASS_NAME" value="case2.MyHashMapTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DomainModelTest.equivalentActionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyHashMapTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="case3.*" />
+          <option name="PATTERN" value="case2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="case3" />
-      <option name="MAIN_CLASS_NAME" value="case3.DomainModelTest" />
-      <option name="METHOD_NAME" value="equivalentActionTest" />
+      <option name="PACKAGE_NAME" value="case2" />
+      <option name="MAIN_CLASS_NAME" value="case2.MyHashMapTest" />
+      <option name="METHOD_NAME" value="testDelete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -138,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyHashMapTest" />
+        <item itemvalue="JUnit.MyHashMapTest.testDelete" />
         <item itemvalue="JUnit.All in lab1" />
         <item itemvalue="JUnit.BinarySearchTreeTest" />
         <item itemvalue="JUnit.BinarySearchTreeTest.testDeleteNodeNonExistsChildren" />
-        <item itemvalue="JUnit.DomainModelTest" />
-        <item itemvalue="JUnit.DomainModelTest.equivalentActionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +169,7 @@
       <workItem from="1772624576909" duration="29000" />
       <workItem from="1774157338580" duration="15263000" />
       <workItem from="1774242892133" duration="28000" />
-      <workItem from="1774247898346" duration="4176000" />
+      <workItem from="1774247898346" duration="6099000" />
     </task>
     <task id="LOCAL-00001" summary="Реализация бинарного дерева поиска">
       <option name="closed" value="true" />
@@ -265,7 +267,31 @@
       <option name="project" value="LOCAL" />
       <updated>1774251364115</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fix case 2">
+      <option name="closed" value="true" />
+      <created>1774253893035</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1774253893035</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix case 2">
+      <option name="closed" value="true" />
+      <created>1774254320747</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1774254320747</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix case 2">
+      <option name="closed" value="true" />
+      <created>1774254420761</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1774254420761</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +305,8 @@
     <MESSAGE value="Тест для равносильности" />
     <MESSAGE value="Покрытие тестами 3 кейса" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="fix case 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix case 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -298,6 +325,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/lab1$All_in_lab1.ic" NAME="All in lab1 Coverage Results" MODIFIED="1774251355338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/lab1$All_in_lab1.ic" NAME="All in lab1 Coverage Results" MODIFIED="1774254370796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

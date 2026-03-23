@@ -24,9 +24,25 @@ public class ApproachAction extends Action {
         if (target instanceof Person) {
             if (source instanceof Person) {
                 target.incrementStressLevel(50);
+                if (((Person) source).getIsDrunk()) {
+                    target.incrementStressLevel(120);
+                }
+                if (((Person) target).getIsDrunk()) {
+                    target.decrementStressLevel(100);
+                }
+
+                if (((Person) target).getAge() > 5 && ((Person) target).getAge() < 13) {
+                    target.incrementStressLevel(50); // Я СЛИШКОМ МОЛОД, чтобы умирать
+                } else if (((Person) target).getAge() > 80) {
+                    target.decrementStressLevel(600); // Наконец-то помру
+
+                }
             }
             else if (source instanceof Computer) {
                 target.incrementStressLevel(150); // ААА, за мной гонится робот
+                if (((Computer) source).getIsKillerRobot()) {
+                    target.incrementStressLevel(500);
+                }
             }
 
             if (tempo == ActionTempoType.FAST) {

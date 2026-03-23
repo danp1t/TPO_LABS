@@ -22,4 +22,10 @@ public abstract class Entity {
             this.stressLevel += amount;
         }
     }
+
+    public void decrementStressLevel(int amount) {
+        if (amount > 0) {
+            this.stressLevel -= amount;
+        }
+    }
 }

@@ -15,12 +15,12 @@ public class ApproachActionTest {
     @DisplayName("Тест: влияние освещённости на уровень стресса при приближении")
     @Test
     void stressLevelApproachActionDependsOnLightLevelTest() {
-        Computer computer = new Computer("Терминатор");
-        Person person = new Person("Иван");
-        Computer computer2 = new Computer("Терминатор 2");
-        Person person2 = new Person("Петр");
-        Computer computer3 = new Computer("Терминатор 3");
-        Person person3 = new Person("Виктор");
+        Computer computer = new Computer("Терминатор", false);
+        Person person = new Person("Иван", 18, false);
+        Computer computer2 = new Computer("Терминатор 2", false);
+        Person person2 = new Person("Петр", 18, false);
+        Computer computer3 = new Computer("Терминатор 3", false);
+        Person person3 = new Person("Виктор", 18,false);
 
         ApproachAction inDark = new ApproachAction(
                 ActionTempoType.FAST, computer, person, LightLevel.DARK
@@ -47,12 +47,12 @@ public class ApproachActionTest {
     @DisplayName("Тест: влияние скорости на уровень стресса при приближении")
     @Test
     void stressLevelApproachActionDependsOnSpeedTest() {
-        Computer computer = new Computer("Терминатор");
-        Person person = new Person("Иван");
-        Computer computer2 = new Computer("Терминатор 2");
-        Person person2 = new Person("Петр");
-        Computer computer3 = new Computer("Терминатор 3");
-        Person person3 = new Person("Виктор");
+        Computer computer = new Computer("Терминатор", false);
+        Person person = new Person("Иван", 18, false);
+        Computer computer2 = new Computer("Терминатор 2", false);
+        Person person2 = new Person("Петр", 18, false);
+        Computer computer3 = new Computer("Терминатор 3", false);
+        Person person3 = new Person("Виктор", 18,false);
 
         ApproachAction fast = new ApproachAction(
                 ActionTempoType.FAST, computer, person, LightLevel.DARK
@@ -78,12 +78,12 @@ public class ApproachActionTest {
     @DisplayName("Тест: компьютеры не боятся приближения")
     @Test
     void stressLevelApproachActionDependsOnEntityTest() {
-        Computer computer = new Computer("Терминатор");
-        Person person = new Person("Иван");
-        Computer computer2 = new Computer("Терминатор 2");
-        Person person2 = new Person("Петр");
-        Computer computer3 = new Computer("Терминатор 3");
-        Person person3 = new Person("Виктор");
+        Computer computer = new Computer("Терминатор", false);
+        Person person = new Person("Иван", 18, false);
+        Computer computer2 = new Computer("Терминатор 2", false);
+        Person person2 = new Person("Петр", 18, false);
+        Computer computer3 = new Computer("Терминатор 3", false);
+        Person person3 = new Person("Виктор", 18,false);
 
         ApproachAction fastDark = new ApproachAction(
                 ActionTempoType.FAST, person, computer, LightLevel.DARK

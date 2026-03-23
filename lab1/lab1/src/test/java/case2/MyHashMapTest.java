@@ -141,4 +141,13 @@ class MyHashMapTest {
             }
         }
     }
+
+    @Test
+    void testDelete(){
+        MyHashMap map = new MyHashMap();
+        map.insert(123L);
+        map.insert(123L);
+        map.delete(123L);
+        assertTrue(map.find(123L));
+    }
 }
