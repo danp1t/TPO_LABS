@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="fix">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/danp1t/case2/MyHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/danp1t/case2/MyHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/case2/MyHashMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case2/MyHashMapTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +50,7 @@
     "JUnit.DomainModelTest.stressLevelRepeatActionDependsOnEntityTest.executor": "Run",
     "JUnit.MyHashMapTest.executor": "Run",
     "JUnit.MyHashMapTest.testDelete.executor": "Run",
+    "JUnit.MyHashMapTest.testPrint.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -121,7 +123,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyHashMapTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyHashMapTest.testPrint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <extension name="coverage">
         <pattern>
@@ -131,7 +133,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="case2" />
       <option name="MAIN_CLASS_NAME" value="case2.MyHashMapTest" />
-      <option name="METHOD_NAME" value="testDelete" />
+      <option name="METHOD_NAME" value="testPrint" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,10 +142,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in lab1" />
+        <item itemvalue="JUnit.MyHashMapTest" />
+        <item itemvalue="JUnit.MyHashMapTest.testPrint" />
         <item itemvalue="JUnit.ApproachActionTest" />
         <item itemvalue="JUnit.ApproachActionTest.stressLevelApproachActionDependsOnDrunkTest" />
-        <item itemvalue="JUnit.MyHashMapTest" />
-        <item itemvalue="JUnit.MyHashMapTest.testDelete" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +170,7 @@
       <workItem from="1772624576909" duration="29000" />
       <workItem from="1774157338580" duration="15263000" />
       <workItem from="1774242892133" duration="28000" />
-      <workItem from="1774247898346" duration="9517000" />
+      <workItem from="1774247898346" duration="9830000" />
     </task>
     <task id="LOCAL-00001" summary="Реализация бинарного дерева поиска">
       <option name="closed" value="true" />
@@ -322,7 +324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774258775849</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="fix">
+      <option name="closed" value="true" />
+      <created>1774258958460</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1774258958460</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

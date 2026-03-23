@@ -94,4 +94,12 @@ public class MyHashMap {
         }
         return false;
     }
+
+    public String getBucketsState() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < buckets.size(); i++) {
+            sb.append("Bucket ").append(i).append(": ").append(buckets.get(i)).append("\n");
+        }
+        return sb.toString();
+    }
 }

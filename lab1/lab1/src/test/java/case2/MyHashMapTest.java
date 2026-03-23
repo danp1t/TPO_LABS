@@ -150,4 +150,54 @@ class MyHashMapTest {
         map.delete(123L);
         assertTrue(map.find(123L));
     }
+
+    @Test
+    void testPrint() {
+        MyHashMap map = new MyHashMap();
+
+        map.insert(123L);
+        assertEquals("Bucket 0: []\n" +
+                "Bucket 1: []\n" +
+                "Bucket 2: []\n" +
+                "Bucket 3: []\n" +
+                "Bucket 4: []\n" +
+                "Bucket 5: []\n" +
+                "Bucket 6: [123]\n" +
+                "Bucket 7: []\n" +
+                "Bucket 8: []\n" +
+                "Bucket 9: []\n" +
+                "Bucket 10: []\n" +
+                "Bucket 11: []\n" +
+                "Bucket 12: []\n", map.getBucketsState());
+        map.insert(123L);
+        assertEquals("Bucket 0: []\n" +
+                "Bucket 1: []\n" +
+                "Bucket 2: []\n" +
+                "Bucket 3: []\n" +
+                "Bucket 4: []\n" +
+                "Bucket 5: []\n" +
+                "Bucket 6: [123, 123]\n" +
+                "Bucket 7: []\n" +
+                "Bucket 8: []\n" +
+                "Bucket 9: []\n" +
+                "Bucket 10: []\n" +
+                "Bucket 11: []\n" +
+                "Bucket 12: []\n", map.getBucketsState());
+
+        map.delete(123L);
+        assertEquals("Bucket 0: []\n" +
+                "Bucket 1: []\n" +
+                "Bucket 2: []\n" +
+                "Bucket 3: []\n" +
+                "Bucket 4: []\n" +
+                "Bucket 5: []\n" +
+                "Bucket 6: [123]\n" +
+                "Bucket 7: []\n" +
+                "Bucket 8: []\n" +
+                "Bucket 9: []\n" +
+                "Bucket 10: []\n" +
+                "Bucket 11: []\n" +
+                "Bucket 12: []\n", map.getBucketsState());
+
+    }
 }
