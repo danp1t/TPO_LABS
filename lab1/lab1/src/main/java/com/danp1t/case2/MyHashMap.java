@@ -26,7 +26,7 @@ public class MyHashMap {
         return (int) (value % BUCKET_COUNT);
     }
 
-    private int bucketIndex(String str) {
+    public int bucketIndex(String str) {
         long hash = hashString(str);
         int index = (int) (hash % BUCKET_COUNT);
         if (index < 0) index += BUCKET_COUNT;
