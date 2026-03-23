@@ -31,7 +31,7 @@ public class RepeatAction extends Action {
                 if (source instanceof Computer) { // ААА, ТЕРМИНАТОРЫ НАСТУПАЮТ!!! СПАСИТЕ, ПОМОГИТЕ
                     target.incrementStressLevel(100);
                 }
-                else if (source instanceof Person) {
+                else {
                     target.incrementStressLevel(50);
                 }
 
@@ -41,7 +41,7 @@ public class RepeatAction extends Action {
                 else if (tempo == ActionTempoType.MEDIUM) {
                     target.incrementStressLevel(7 + (count * 2));
                 }
-                else if (tempo == ActionTempoType.FAST) {
+                else {
                     target.incrementStressLevel(5 + count);
                 }
             }

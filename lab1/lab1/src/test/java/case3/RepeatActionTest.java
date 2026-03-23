@@ -166,4 +166,50 @@ public class RepeatActionTest {
         assertEquals(0, computer2.getStressLevel());
         assertEquals(0, computer3.getStressLevel());
     }
+
+    @DisplayName("Тест: Если повторять фразу про себя, то не так страшно")
+    @Test
+    void stressLevelRepeatActionDependsOnScopeTest() {
+        Computer computer = new Computer("Терминатор", false);
+        Person person = new Person("Иван", 18, false);
+        Computer computer2 = new Computer("Терминатор 2", false);
+        Person person2 = new Person("Петр", 18, false);
+        Computer computer3 = new Computer("Терминатор 3", false);
+        Person person3 = new Person("Игорь", 18, false);
+
+        RepeatAction fast = new RepeatAction(
+                ActionScopeType.INTERNAL,
+                ActionTempoType.FAST,
+                computer,
+                person,
+                "умри ",
+                3
+        );
+
+        RepeatAction medium = new RepeatAction(
+                ActionScopeType.INTERNAL,
+                ActionTempoType.MEDIUM,
+                computer2,
+                person2,
+                "умри ",
+                3
+        );
+
+        RepeatAction slow = new RepeatAction(
+                ActionScopeType.INTERNAL,
+                ActionTempoType.SLOW,
+                computer3,
+                person3,
+                "своевременно... ",
+                3
+        );
+
+        fast.execute();
+        medium.execute();
+        slow.execute();
+
+        assertEquals(0, person.getStressLevel());
+        assertEquals(0, person2.getStressLevel());
+        assertEquals(0, person3.getStressLevel());
+    }
 }

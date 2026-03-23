@@ -62,4 +62,13 @@ public class DomainModelTest {
         assertEquals(0, person.getStressLevel());
     }
 
+    @DisplayName("ТЕСТ: Нельзя отрицательно улучшить состояние стресса")
+    @Test
+    void decrementStressLevelActionTest() {
+        Person person = new Person("Иван", 18, false);
+        person.decrementStressLevel(-5);
+
+        assertEquals(0, person.getStressLevel());
+    }
+
 }
