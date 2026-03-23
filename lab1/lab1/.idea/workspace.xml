@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="fix case 2">
+    <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="Добавил поля в модельку">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/danp1t/case3/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/danp1t/case3/entity/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/case2/MyHashMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case2/MyHashMapTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Отчет.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Отчет.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/case3/ApproachActionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case3/ApproachActionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/case3/CountActionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case3/CountActionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/case3/DomainModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case3/DomainModelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/case3/RepeatActionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case3/RepeatActionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +68,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.MyHashMapTest">
+  <component name="RunManager" selected="JUnit.All in lab1">
     <configuration name="All in lab1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <option name="PACKAGE_NAME" value="" />
@@ -140,9 +141,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in lab1" />
         <item itemvalue="JUnit.MyHashMapTest" />
         <item itemvalue="JUnit.MyHashMapTest.testDelete" />
-        <item itemvalue="JUnit.All in lab1" />
         <item itemvalue="JUnit.BinarySearchTreeTest" />
         <item itemvalue="JUnit.BinarySearchTreeTest.testDeleteNodeNonExistsChildren" />
       </list>
@@ -169,7 +170,7 @@
       <workItem from="1772624576909" duration="29000" />
       <workItem from="1774157338580" duration="15263000" />
       <workItem from="1774242892133" duration="28000" />
-      <workItem from="1774247898346" duration="6099000" />
+      <workItem from="1774247898346" duration="7512000" />
     </task>
     <task id="LOCAL-00001" summary="Реализация бинарного дерева поиска">
       <option name="closed" value="true" />
@@ -291,7 +292,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774254420761</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Добавил поля в модельку">
+      <option name="closed" value="true" />
+      <created>1774256507122</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1774256507122</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +315,8 @@
     <MESSAGE value="Покрытие тестами 3 кейса" />
     <MESSAGE value="fix" />
     <MESSAGE value="fix case 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix case 2" />
+    <MESSAGE value="Добавил поля в модельку" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил поля в модельку" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -325,6 +335,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/lab1$All_in_lab1.ic" NAME="All in lab1 Coverage Results" MODIFIED="1774254370796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/lab1$All_in_lab1.ic" NAME="All in lab1 Coverage Results" MODIFIED="1774256685014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

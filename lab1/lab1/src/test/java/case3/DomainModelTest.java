@@ -19,11 +19,11 @@ public class DomainModelTest {
     @DisplayName("Тест: подсчет вслух равносилен медленному приближению в темноте к человеку, повторяя: \"Умри... умри... умри...\"")
     @Test
     void equivalentActionTest() {
-        Computer computer = new Computer("Bravo");
-        Person person = new Person("Форд");
+        Computer computer = new Computer("Bravo", false);
+        Person person = new Person("Форд", 18, false);
 
-        Person person1 = new Person("Маньяк");
-        Person person2 = new Person("Иван");
+        Person person1 = new Person("Маньяк", 18, false);
+        Person person2 = new Person("Иван", 18, false);
 
         CountAction countAction = new CountAction(
                 ActionScopeType.EXTERNAL,
@@ -56,7 +56,7 @@ public class DomainModelTest {
     @DisplayName("ТЕСТ: Нельзя добавить отрицательный уровень стресса")
     @Test
     void incrementStressLevelActionTest() {
-        Person person = new Person("Иван");
+        Person person = new Person("Иван", 18, false);
         person.incrementStressLevel(-5);
 
         assertEquals(0, person.getStressLevel());

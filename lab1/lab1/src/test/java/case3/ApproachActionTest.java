@@ -105,4 +105,27 @@ public class ApproachActionTest {
         assertEquals(0, computer2.getStressLevel());
         assertEquals(0, computer3.getStressLevel());
     }
+
+    @DisplayName("Тест: За человеком гонится робот убийца, но человек пьяный")
+    @Test
+    void stressLevelApproachActionDependsOnDrunkTest() {
+        Computer computer = new Computer("Терминатор", true);
+        Person person = new Person("Иван", 18, true);
+        Computer computer2 = new Computer("Терминатор 2", true);
+        Person person2 = new Person("Петр", 18, false);
+
+        ApproachAction drunk = new ApproachAction(
+                ActionTempoType.FAST, computer, person, LightLevel.DARK
+        );
+
+        ApproachAction notDrunk = new ApproachAction(
+                ActionTempoType.MEDIUM, computer2, person2, LightLevel.DARK
+        );
+
+        drunk.execute();
+        notDrunk.execute();
+
+        assertTrue(person.getStressLevel() > person2.getStressLevel());
+    }
+
 }

@@ -15,12 +15,12 @@ public class CountActionTest {
     @DisplayName("Тест: чем больше считать, тем больше стресса испытает компьютер")
     @Test
     void stressLevelCountActionDependsOnCountTest() {
-        Computer computer = new Computer("Терминатор");
-        Person person = new Person("Иван");
-        Computer computer2 = new Computer("Терминатор 2");
-        Person person2 = new Person("Петр");
-        Computer computer3 = new Computer("Терминатор 3");
-        Person person3 = new Person("Виктор");
+        Computer computer = new Computer("Терминатор", false);
+        Person person = new Person("Иван", 18, false);
+        Computer computer2 = new Computer("Терминатор 2", false);
+        Person person2 = new Person("Петр", 18, false);
+        Computer computer3 = new Computer("Терминатор 3", false);
+        Person person3 = new Person("Игорь", 18, false);
 
         CountAction times50 = new CountAction(
                 ActionScopeType.EXTERNAL,
@@ -58,12 +58,12 @@ public class CountActionTest {
     @DisplayName("Тест: чем медленнее считать, тем больше стресса испытает компьютер")
     @Test
     void stressLevelCountActionDependsOnTempoTest() {
-        Computer computer = new Computer("Терминатор");
-        Person person = new Person("Иван");
-        Computer computer2 = new Computer("Терминатор 2");
-        Person person2 = new Person("Петр");
-        Computer computer3 = new Computer("Терминатор 3");
-        Person person3 = new Person("Виктор");
+        Computer computer = new Computer("Терминатор", false);
+        Person person = new Person("Иван", 18, false);
+        Computer computer2 = new Computer("Терминатор 2", false);
+        Person person2 = new Person("Петр", 18, false);
+        Computer computer3 = new Computer("Терминатор 3", false);
+        Person person3 = new Person("Игорь", 18, false);
 
         CountAction fast = new CountAction(
                 ActionScopeType.EXTERNAL,
@@ -101,12 +101,12 @@ public class CountActionTest {
     @DisplayName("Тест: люди не боятся подсчета чисел")
     @Test
     void stressLevelCountActionDependsOnEntityTest() {
-        Computer computer = new Computer("Терминатор");
-        Person person = new Person("Иван");
-        Computer computer2 = new Computer("Терминатор 2");
-        Person person2 = new Person("Петр");
-        Computer computer3 = new Computer("Терминатор 3");
-        Person person3 = new Person("Виктор");
+        Computer computer = new Computer("Терминатор", false);
+        Person person = new Person("Иван", 18, false);
+        Computer computer2 = new Computer("Терминатор 2", false);
+        Person person2 = new Person("Петр", 18, false);
+        Computer computer3 = new Computer("Терминатор 3", false);
+        Person person3 = new Person("Игорь", 18, false);
 
         CountAction times50Fast = new CountAction(
                 ActionScopeType.EXTERNAL,
@@ -145,12 +145,12 @@ public class CountActionTest {
     @DisplayName("Тест: подсчета про себя компьютеры не бояться")
     @Test
     void stressLevelCountActionDependsOnScopeTest() {
-        Computer computer = new Computer("Терминатор");
-        Person person = new Person("Иван");
-        Computer computer2 = new Computer("Терминатор 2");
-        Person person2 = new Person("Петр");
-        Computer computer3 = new Computer("Терминатор 3");
-        Person person3 = new Person("Виктор");
+        Computer computer = new Computer("Терминатор", false);
+        Person person = new Person("Иван", 18, false);
+        Computer computer2 = new Computer("Терминатор 2", false);
+        Person person2 = new Person("Петр", 18, false);
+        Computer computer3 = new Computer("Терминатор 3", false);
+        Person person3 = new Person("Игорь", 18, false);
 
         CountAction times50Fast = new CountAction(
                 ActionScopeType.INTERNAL,

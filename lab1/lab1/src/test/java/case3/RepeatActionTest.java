@@ -15,10 +15,10 @@ public class RepeatActionTest {
     @DisplayName("Тест: повторение слов от компьютера страшнее, чем от человека")
     @Test
     void stressLevelRepeatActionDependsOnEntityTest() {
-        Computer computer = new Computer("Терминатор");
-        Person person = new Person("Иван");
-        Person person2 = new Person("КСВ");
-        Person person3 = new Person("Петр");
+        Computer computer = new Computer("Терминатор", false);
+        Person person = new Person("Иван", 18, false);
+        Person person2 = new Person("КСВ", 55, false);
+        Person person3 = new Person("Петр", 18, false);
 
         RepeatAction computerSpeak = new RepeatAction(
                 ActionScopeType.EXTERNAL,
@@ -47,10 +47,10 @@ public class RepeatActionTest {
     @DisplayName("Тест: чем больше повторов, тем страшнее")
     @Test
     void stressLevelRepeatActionDependsOnCountTest() {
-        Computer computer = new Computer("Терминатор");
-        Person person = new Person("Иван");
-        Computer computer2 = new Computer("Терминатор 2");
-        Person person2 = new Person("Петр");
+        Computer computer = new Computer("Терминатор", false);
+        Person person = new Person("Иван", 18, false);
+        Computer computer2 = new Computer("Терминатор 2", false);
+        Person person2 = new Person("Петр", 18, false);
 
         RepeatAction times3 = new RepeatAction(
                 ActionScopeType.EXTERNAL,
@@ -79,12 +79,12 @@ public class RepeatActionTest {
     @DisplayName("Тест: медленнее, тем страшнее")
     @Test
     void stressLevelRepeatActionDependsOnTempoTest() {
-        Computer computer = new Computer("Терминатор");
-        Person person = new Person("Иван");
-        Computer computer2 = new Computer("Терминатор 2");
-        Person person2 = new Person("Петр");
-        Computer computer3 = new Computer("Терминатор 3");
-        Person person3 = new Person("Игорь");
+        Computer computer = new Computer("Терминатор", false);
+        Person person = new Person("Иван", 18, false);
+        Computer computer2 = new Computer("Терминатор 2", false);
+        Person person2 = new Person("Петр", 18, false);
+        Computer computer3 = new Computer("Терминатор 3", false);
+        Person person3 = new Person("Игорь", 18, false);
 
         RepeatAction fast = new RepeatAction(
                 ActionScopeType.EXTERNAL,
@@ -124,12 +124,12 @@ public class RepeatActionTest {
     @DisplayName("Тест: компьютеры не бояться повторов фраз")
     @Test
     void stressLevelRepeatActionTest() {
-        Computer computer = new Computer("Терминатор");
-        Person person = new Person("Иван");
-        Computer computer2 = new Computer("Терминатор 2");
-        Person person2 = new Person("Петр");
-        Computer computer3 = new Computer("Терминатор 3");
-        Person person3 = new Person("Игорь");
+        Computer computer = new Computer("Терминатор", false);
+        Person person = new Person("Иван", 18, false);
+        Computer computer2 = new Computer("Терминатор 2", false);
+        Person person2 = new Person("Петр", 18, false);
+        Computer computer3 = new Computer("Терминатор 3", false);
+        Person person3 = new Person("Игорь", 18, false);
 
         RepeatAction fast = new RepeatAction(
                 ActionScopeType.EXTERNAL,
