@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="Тест для CountAction">
-      <change afterPath="$PROJECT_DIR$/src/test/java/case3/ApproachActionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/case3/CountActionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/case3/RepeatActionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/danp1t/case3/action/RepeatAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/danp1t/case3/action/RepeatAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/case3/DomainModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case3/DomainModelTest.java" afterDir="false" />
+    <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="Тест для равносильности">
+      <change beforePath="$PROJECT_DIR$/src/test/java/case3/CountActionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case3/CountActionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/case3/RepeatActionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case3/RepeatActionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../~$Отчет.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Отчет.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Отчет.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +42,7 @@
     "JUnit.CosTest.testCriticalPoint.executor": "Run",
     "JUnit.CosTest.testPeriod.executor": "Run",
     "JUnit.CosTest.testTable.executor": "Run",
+    "JUnit.DomainModelTest.equivalentActionTest.executor": "Run",
     "JUnit.DomainModelTest.executor": "Run",
     "JUnit.DomainModelTest.stressLevelDependsOnLightLevelTest.executor": "Run",
     "JUnit.DomainModelTest.stressLevelRepeatActionDependsOnEntityTest.executor": "Run",
@@ -172,7 +171,7 @@
       <workItem from="1772276720835" duration="789000" />
       <workItem from="1772360813637" duration="8786000" />
       <workItem from="1772624576909" duration="29000" />
-      <workItem from="1774157338580" duration="12363000" />
+      <workItem from="1774157338580" duration="15263000" />
     </task>
     <task id="LOCAL-00001" summary="Реализация бинарного дерева поиска">
       <option name="closed" value="true" />
@@ -230,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774169085585</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Тест для равносильности">
+      <option name="closed" value="true" />
+      <created>1774171454442</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1774171454442</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +249,8 @@
     <MESSAGE value="Описал доменную модель для задания 3" />
     <MESSAGE value="fix" />
     <MESSAGE value="Тест для CountAction" />
-    <option name="LAST_COMMIT_MESSAGE" value="Тест для CountAction" />
+    <MESSAGE value="Тест для равносильности" />
+    <option name="LAST_COMMIT_MESSAGE" value="Тест для равносильности" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

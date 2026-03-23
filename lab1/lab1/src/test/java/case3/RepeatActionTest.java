@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class RepeatActionTest {
-    @DisplayName("Тест: повторение слов от компьютера страшнее чем от человека")
+    @DisplayName("Тест: повторение слов от компьютера страшнее, чем от человека")
     @Test
     void stressLevelRepeatActionDependsOnEntityTest() {
         Computer computer = new Computer("Терминатор");

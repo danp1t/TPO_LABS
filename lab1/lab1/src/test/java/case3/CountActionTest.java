@@ -55,7 +55,7 @@ public class CountActionTest {
 
     }
 
-    @DisplayName("Тест: чем дольше считать, тем больше стресса испытает компьютер")
+    @DisplayName("Тест: чем медленнее считать, тем больше стресса испытает компьютер")
     @Test
     void stressLevelCountActionDependsOnTempoTest() {
         Computer computer = new Computer("Терминатор");
