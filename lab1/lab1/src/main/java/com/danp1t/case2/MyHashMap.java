@@ -36,11 +36,6 @@ public class MyHashMap {
     public boolean insert(long value) {
         int index = bucketIndex(value);
         List<Object> bucket = buckets.get(index);
-        for (Object obj : bucket) {
-            if (obj instanceof Long && ((Long) obj) == value) {
-                return false;
-            }
-        }
         bucket.add(value);
         return true;
     }
@@ -48,11 +43,6 @@ public class MyHashMap {
     public boolean insert(String str) {
         int index = bucketIndex(str);
         List<Object> bucket = buckets.get(index);
-        for (Object obj : bucket) {
-            if (obj instanceof String && obj.equals(str)) {
-                return false;
-            }
-        }
         bucket.add(str);
         return true;
     }
