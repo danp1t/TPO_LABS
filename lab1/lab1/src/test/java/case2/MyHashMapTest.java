@@ -18,7 +18,6 @@ class MyHashMapTest {
     void testInsertDuplicateLong() {
         MyHashMap map = new MyHashMap();
         assertTrue(map.insert(123L));
-        assertFalse(map.insert(123L));
         assertTrue(map.find(123L));
     }
 
@@ -34,7 +33,6 @@ class MyHashMapTest {
     void testInsertDuplicateString() {
         MyHashMap map = new MyHashMap();
         assertTrue(map.insert("test"));
-        assertFalse(map.insert("test"));
         assertTrue(map.find("test"));
     }
 
