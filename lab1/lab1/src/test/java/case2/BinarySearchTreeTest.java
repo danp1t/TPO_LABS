@@ -152,4 +152,35 @@ public class BinarySearchTreeTest {
         binarySearchTree.insert("b");
         assertEquals("a b b c", binarySearchTree.print());
     }
+
+    @Test
+    void testDeleteNodeNonExists() {
+        binarySearchTree.insert("b");
+        binarySearchTree.delete("a");
+        assertEquals("b", binarySearchTree.print());
+    }
+
+    @Test
+    void testDeleteRightChildrenNode() {
+        binarySearchTree.insert("5");
+        binarySearchTree.insert("6");
+        binarySearchTree.insert("3");
+        binarySearchTree.insert("1");
+        binarySearchTree.insert("2");
+        binarySearchTree.delete("3");
+        assertEquals("0001 0002 0005 0006", binarySearchTree.print());
+    }
+
+    @Test
+    void testDeleteComplexNode() {
+        binarySearchTree.insert("5");
+        binarySearchTree.insert("6");
+        binarySearchTree.insert("3");
+        binarySearchTree.insert("1");
+        binarySearchTree.insert("2");
+        binarySearchTree.insert("2");
+        binarySearchTree.insert("5");
+        binarySearchTree.delete("2");
+        assertEquals("0001 0002 0003 0005 0005 0006", binarySearchTree.print());
+    }
 }
