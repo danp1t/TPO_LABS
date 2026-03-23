@@ -139,7 +139,7 @@ public class BinarySearchTree {
 }
 
 class Node {
-    private String value;
+    private final String value;
     private Node left, right, parent;
 
     public Node(String value) {
@@ -148,10 +148,6 @@ class Node {
 
     public String getValue() {
         return value;
-    }
-
-    public void setValue(String value) {
-        this.value = value;
     }
 
     public Node getLeft() {

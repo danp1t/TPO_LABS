@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="Тест для равносильности">
-      <change beforePath="$PROJECT_DIR$/src/test/java/case3/CountActionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case3/CountActionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/case3/RepeatActionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case3/RepeatActionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../~$Отчет.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Отчет.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Отчет.docx" afterDir="false" />
+    <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/danp1t/case3/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/danp1t/case3/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/case3/DomainModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case3/DomainModelTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +35,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.All in lab1.executor": "Coverage",
     "JUnit.BinarySearchTreeTest.executor": "Run",
     "JUnit.BinarySearchTreeTest.testInsertDuplicate.executor": "Run",
     "JUnit.CosTest.executor": "Run",
@@ -63,18 +63,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.DomainModelTest">
-    <configuration name="BinarySearchTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.All in lab1">
+    <configuration name="All in lab1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="case2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="case2" />
-      <option name="MAIN_CLASS_NAME" value="case2.BinarySearchTreeTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -144,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in lab1" />
         <item itemvalue="JUnit.DomainModelTest" />
         <item itemvalue="JUnit.DomainModelTest.equivalentActionTest" />
         <item itemvalue="JUnit.DomainModelTest.stressLevelRepeatActionDependsOnEntityTest" />
         <item itemvalue="JUnit.DomainModelTest.stressLevelDependsOnLightLevelTest" />
-        <item itemvalue="JUnit.BinarySearchTreeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -172,6 +165,8 @@
       <workItem from="1772360813637" duration="8786000" />
       <workItem from="1772624576909" duration="29000" />
       <workItem from="1774157338580" duration="15263000" />
+      <workItem from="1774242892133" duration="28000" />
+      <workItem from="1774247898346" duration="504000" />
     </task>
     <task id="LOCAL-00001" summary="Реализация бинарного дерева поиска">
       <option name="closed" value="true" />
@@ -237,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774171454442</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix">
+      <option name="closed" value="true" />
+      <created>1774242908665</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1774242908665</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,10 +250,10 @@
     <MESSAGE value="Реализация бинарного дерева поиска" />
     <MESSAGE value="test case2 done" />
     <MESSAGE value="Описал доменную модель для задания 3" />
-    <MESSAGE value="fix" />
     <MESSAGE value="Тест для CountAction" />
     <MESSAGE value="Тест для равносильности" />
-    <option name="LAST_COMMIT_MESSAGE" value="Тест для равносильности" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -267,5 +270,8 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/lab1$All_in_lab1.ic" NAME="All in lab1 Coverage Results" MODIFIED="1774248295187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

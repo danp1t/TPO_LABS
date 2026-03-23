@@ -17,23 +17,6 @@ public abstract class Action {
         this.target = target;
     }
 
-    public ActionScopeType getScope() {
-        return scope;
-    }
-
-    public ActionTempoType getTempo() {
-        return tempo;
-    }
-
-
-    public Entity getSource() {
-        return source;
-    }
-
-    public Entity getTarget() {
-        return target;
-    }
-
     public abstract void execute();
 
 }
