@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="Добавил поля в модельку">
+    <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/danp1t/case3/action/ApproachAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/danp1t/case3/action/ApproachAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/case3/ApproachActionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case3/ApproachActionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/case3/CountActionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case3/CountActionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/case3/DomainModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case3/DomainModelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/case3/RepeatActionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case3/RepeatActionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +36,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.All in lab1.executor": "Coverage",
+    "JUnit.ApproachActionTest.executor": "Debug",
+    "JUnit.ApproachActionTest.stressLevelApproachActionDependsOnDrunkTest.executor": "Debug",
     "JUnit.BinarySearchTreeTest.executor": "Debug",
     "JUnit.BinarySearchTreeTest.testDeleteNodeNonExistsChildren.executor": "Debug",
     "JUnit.BinarySearchTreeTest.testInsertDuplicate.executor": "Run",
@@ -77,32 +77,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinarySearchTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApproachActionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="case2.*" />
+          <option name="PATTERN" value="case3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="case2" />
-      <option name="MAIN_CLASS_NAME" value="case2.BinarySearchTreeTest" />
+      <option name="PACKAGE_NAME" value="case3" />
+      <option name="MAIN_CLASS_NAME" value="case3.ApproachActionTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinarySearchTreeTest.testDeleteNodeNonExistsChildren" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApproachActionTest.stressLevelApproachActionDependsOnDrunkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="case2.*" />
+          <option name="PATTERN" value="case3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="case2" />
-      <option name="MAIN_CLASS_NAME" value="case2.BinarySearchTreeTest" />
-      <option name="METHOD_NAME" value="testDeleteNodeNonExistsChildren" />
+      <option name="PACKAGE_NAME" value="case3" />
+      <option name="MAIN_CLASS_NAME" value="case3.ApproachActionTest" />
+      <option name="METHOD_NAME" value="stressLevelApproachActionDependsOnDrunkTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,10 +142,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in lab1" />
+        <item itemvalue="JUnit.ApproachActionTest" />
+        <item itemvalue="JUnit.ApproachActionTest.stressLevelApproachActionDependsOnDrunkTest" />
         <item itemvalue="JUnit.MyHashMapTest" />
         <item itemvalue="JUnit.MyHashMapTest.testDelete" />
-        <item itemvalue="JUnit.BinarySearchTreeTest" />
-        <item itemvalue="JUnit.BinarySearchTreeTest.testDeleteNodeNonExistsChildren" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +170,7 @@
       <workItem from="1772624576909" duration="29000" />
       <workItem from="1774157338580" duration="15263000" />
       <workItem from="1774242892133" duration="28000" />
-      <workItem from="1774247898346" duration="7512000" />
+      <workItem from="1774247898346" duration="8868000" />
     </task>
     <task id="LOCAL-00001" summary="Реализация бинарного дерева поиска">
       <option name="closed" value="true" />
@@ -300,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774256507122</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fix">
+      <option name="closed" value="true" />
+      <created>1774256945612</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1774256945612</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,10 +321,10 @@
     <MESSAGE value="Тест для CountAction" />
     <MESSAGE value="Тест для равносильности" />
     <MESSAGE value="Покрытие тестами 3 кейса" />
-    <MESSAGE value="fix" />
     <MESSAGE value="fix case 2" />
     <MESSAGE value="Добавил поля в модельку" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил поля в модельку" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -331,10 +339,20 @@
           <line>82</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/case3/ApproachActionTest.java</url>
+          <line>127</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/danp1t/case3/action/ApproachAction.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/lab1$All_in_lab1.ic" NAME="All in lab1 Coverage Results" MODIFIED="1774256685014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/lab1$All_in_lab1.ic" NAME="All in lab1 Coverage Results" MODIFIED="1774258086393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

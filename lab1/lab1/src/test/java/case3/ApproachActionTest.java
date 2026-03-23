@@ -47,12 +47,12 @@ public class ApproachActionTest {
     @DisplayName("Тест: влияние скорости на уровень стресса при приближении")
     @Test
     void stressLevelApproachActionDependsOnSpeedTest() {
-        Computer computer = new Computer("Терминатор", false);
-        Person person = new Person("Иван", 18, false);
-        Computer computer2 = new Computer("Терминатор 2", false);
-        Person person2 = new Person("Петр", 18, false);
-        Computer computer3 = new Computer("Терминатор 3", false);
-        Person person3 = new Person("Виктор", 18,false);
+        Computer computer = new Computer("Терминатор", true);
+        Person person = new Person("Иван", 18, true);
+        Computer computer2 = new Computer("Терминатор 2", true);
+        Person person2 = new Person("Петр", 18, true);
+        Computer computer3 = new Computer("Терминатор 3", true);
+        Person person3 = new Person("Виктор", 18,true);
 
         ApproachAction fast = new ApproachAction(
                 ActionTempoType.FAST, computer, person, LightLevel.DARK
@@ -109,23 +109,45 @@ public class ApproachActionTest {
     @DisplayName("Тест: За человеком гонится робот убийца, но человек пьяный")
     @Test
     void stressLevelApproachActionDependsOnDrunkTest() {
-        Computer computer = new Computer("Терминатор", true);
-        Person person = new Person("Иван", 18, true);
-        Computer computer2 = new Computer("Терминатор 2", true);
-        Person person2 = new Person("Петр", 18, false);
+        Person killer = new Person("Убийца 1", 4, true);
+        Person person = new Person("Иван", 4, true);
+        Person killer2 = new Person("Терминатор 2", 4, false);
+        Person person2 = new Person("Петр", 4, false);
 
         ApproachAction drunk = new ApproachAction(
-                ActionTempoType.FAST, computer, person, LightLevel.DARK
+                ActionTempoType.FAST, killer, person, LightLevel.DARK
         );
 
         ApproachAction notDrunk = new ApproachAction(
-                ActionTempoType.MEDIUM, computer2, person2, LightLevel.DARK
+                ActionTempoType.FAST, killer2, person2, LightLevel.DARK
         );
 
         drunk.execute();
         notDrunk.execute();
 
         assertTrue(person.getStressLevel() > person2.getStressLevel());
+    }
+
+    @DisplayName("Тест: Зависимость возраста на уровень стресса")
+    @Test
+    void stressLevelApproachActionDependsOnAgeTest() {
+        Person killer = new Person("Терминатор", 18, true);
+        Person person = new Person("Иван", 90, true);
+        Person killer2 = new Person("Ирина Игоревна",  20,true);
+        Person person2 = new Person("Петр", 11, false);
+
+        ApproachAction drunk = new ApproachAction(
+                ActionTempoType.FAST, killer, person, LightLevel.DARK
+        );
+
+        ApproachAction notDrunk = new ApproachAction(
+                ActionTempoType.FAST, killer2, person2, LightLevel.DARK
+        );
+
+        drunk.execute();
+        notDrunk.execute();
+
+        assertTrue(person.getStressLevel() < person2.getStressLevel());
     }
 
 }

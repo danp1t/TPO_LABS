@@ -31,14 +31,14 @@ public class ApproachAction extends Action {
                     target.decrementStressLevel(100);
                 }
 
-                if (((Person) target).getAge() > 5 && ((Person) target).getAge() < 13) {
+                if (((Person) target).getAge() < 13 && ((Person) target).getAge() > 5) {
                     target.incrementStressLevel(50); // Я СЛИШКОМ МОЛОД, чтобы умирать
                 } else if (((Person) target).getAge() > 80) {
                     target.decrementStressLevel(600); // Наконец-то помру
 
                 }
             }
-            else if (source instanceof Computer) {
+            else {
                 target.incrementStressLevel(150); // ААА, за мной гонится робот
                 if (((Computer) source).getIsKillerRobot()) {
                     target.incrementStressLevel(500);
@@ -51,7 +51,7 @@ public class ApproachAction extends Action {
             else if (tempo == ActionTempoType.MEDIUM) {
                 target.incrementStressLevel(100);
             }
-            else if (tempo == ActionTempoType.SLOW) {
+            else {
                 target.incrementStressLevel(50);
             }
 
@@ -61,7 +61,7 @@ public class ApproachAction extends Action {
             else if (lightLevel == LightLevel.DIM) {
                 target.incrementStressLevel(50);
             }
-            else if (lightLevel == LightLevel.BRIGHT) {
+            else {
                 target.incrementStressLevel(10);
             }
         }
