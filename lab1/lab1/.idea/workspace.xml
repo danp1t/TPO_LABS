@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="fix">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/danp1t/case2/OurHashMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/danp1t/case2/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/danp1t/case2/BinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/case2/BinarySearchTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case2/BinarySearchTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/danp1t/case2/BinarySearchTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/case2/BinarySearchTreeTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +167,7 @@
       <workItem from="1772624576909" duration="29000" />
       <workItem from="1774157338580" duration="15263000" />
       <workItem from="1774242892133" duration="28000" />
-      <workItem from="1774247898346" duration="2518000" />
+      <workItem from="1774247898346" duration="4176000" />
     </task>
     <task id="LOCAL-00001" summary="Реализация бинарного дерева поиска">
       <option name="closed" value="true" />
@@ -256,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774250263115</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fix">
+      <option name="closed" value="true" />
+      <created>1774251364115</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1774251364115</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,6 +298,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/lab1$All_in_lab1.ic" NAME="All in lab1 Coverage Results" MODIFIED="1774250954319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/lab1$All_in_lab1.ic" NAME="All in lab1 Coverage Results" MODIFIED="1774251355338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
