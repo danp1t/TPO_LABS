@@ -50,11 +50,6 @@ public class BinarySearchTree {
 
         else {
             Node minRight = findMin(node.getRight());
-            if (minRight.getParent() != node) {
-                transplant(minRight, minRight.getRight());
-                minRight.setRight(node.getRight());
-                minRight.getRight().setParent(minRight);
-            }
             transplant(node, minRight);
             minRight.setLeft(node.getLeft());
             minRight.getLeft().setParent(minRight);
@@ -87,11 +82,11 @@ public class BinarySearchTree {
     private void transplant(Node u, Node v) {
         if (u.getParent() == null) {
             root = v;
-        } else if (u == u.getParent().getLeft()) {
-            u.getParent().setLeft(v);
-        } else {
-            u.getParent().setRight(v);
         }
+        else if (u == u.getParent().getLeft()) {
+            u.getParent().setLeft(v);
+        }
+
         if (v != null) {
             v.setParent(u.getParent());
         }

@@ -174,13 +174,32 @@ public class BinarySearchTreeTest {
     @Test
     void testDeleteComplexNode() {
         binarySearchTree.insert("5");
-        binarySearchTree.insert("6");
-        binarySearchTree.insert("3");
         binarySearchTree.insert("1");
+        binarySearchTree.insert("6");
         binarySearchTree.insert("2");
-        binarySearchTree.insert("2");
+        binarySearchTree.insert("4");
+        binarySearchTree.delete("5");
+        assertEquals("0001 0002 0004 0006", binarySearchTree.print());
+    }
+
+    @Test
+    void testDeleteComplex2Node() {
         binarySearchTree.insert("5");
-        binarySearchTree.delete("2");
-        assertEquals("0001 0002 0003 0005 0005 0006", binarySearchTree.print());
+        binarySearchTree.insert("1");
+        binarySearchTree.insert("6");
+        binarySearchTree.insert("2");
+        binarySearchTree.insert("0");
+        binarySearchTree.delete("0");
+        assertEquals("0001 0002 0005 0006", binarySearchTree.print());
+    }
+
+    @Test
+    void testDeleteComplex3Node() {
+        binarySearchTree.insert("10");
+        binarySearchTree.insert("5");
+        binarySearchTree.insert("15");
+        binarySearchTree.insert("13");
+        binarySearchTree.delete("10");
+        assertEquals("0005 0013", binarySearchTree.print());
     }
 }

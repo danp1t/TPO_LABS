@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="Покрытие тестами 3 кейса">
+    <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/danp1t/case2/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/danp1t/case2/BinarySearchTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/case2/BinarySearchTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case2/BinarySearchTreeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -165,7 +166,7 @@
       <workItem from="1772624576909" duration="29000" />
       <workItem from="1774157338580" duration="15263000" />
       <workItem from="1774242892133" duration="28000" />
-      <workItem from="1774247898346" duration="1583000" />
+      <workItem from="1774247898346" duration="2518000" />
     </task>
     <task id="LOCAL-00001" summary="Реализация бинарного дерева поиска">
       <option name="closed" value="true" />
@@ -247,7 +248,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774248823552</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix">
+      <option name="closed" value="true" />
+      <created>1774250263115</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1774250263115</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,9 +268,9 @@
     <MESSAGE value="Описал доменную модель для задания 3" />
     <MESSAGE value="Тест для CountAction" />
     <MESSAGE value="Тест для равносильности" />
-    <MESSAGE value="fix" />
     <MESSAGE value="Покрытие тестами 3 кейса" />
-    <option name="LAST_COMMIT_MESSAGE" value="Покрытие тестами 3 кейса" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -276,30 +285,10 @@
           <line>82</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/case2/BinarySearchTreeTest.java</url>
-          <line>164</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/danp1t/case2/BinarySearchTree.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/danp1t/case2/BinarySearchTree.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/danp1t/case2/BinarySearchTree.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/lab1$All_in_lab1.ic" NAME="All in lab1 Coverage Results" MODIFIED="1774250137958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/lab1$All_in_lab1.ic" NAME="All in lab1 Coverage Results" MODIFIED="1774250954319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
