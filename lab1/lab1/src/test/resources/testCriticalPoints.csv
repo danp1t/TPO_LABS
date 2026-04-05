@@ -1,0 +1,11 @@
+x,expected,expectException
+1.0e200,1.0,false
+-1.0e200,1.0,false
+1.0e308,1.0,false
+-1.0e308,1.0,false
+1.0e309,0.0,true
+-1.0e309,0.0,true
+1.0e-326,1.0,false
+-1.0e-326,1.0,false
+1.5707963267948966,0.0,false
+0.0,1.0,false

@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="fix">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/danp1t/case2/MyHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/danp1t/case2/MyHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/case2/MyHashMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case2/MyHashMapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testCriticalPoints.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testEven.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testPeriod.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testTable.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testTooBig.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testTooSmall.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/case1/CosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/case1/CosTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Отчет.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Отчет.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,43 +40,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.All in lab1.executor": "Coverage",
-    "JUnit.ApproachActionTest.executor": "Debug",
-    "JUnit.ApproachActionTest.stressLevelApproachActionDependsOnDrunkTest.executor": "Debug",
-    "JUnit.BinarySearchTreeTest.executor": "Debug",
-    "JUnit.BinarySearchTreeTest.testDeleteNodeNonExistsChildren.executor": "Debug",
-    "JUnit.BinarySearchTreeTest.testInsertDuplicate.executor": "Run",
-    "JUnit.CosTest.executor": "Run",
-    "JUnit.CosTest.testCriticalPoint.executor": "Run",
-    "JUnit.CosTest.testPeriod.executor": "Run",
-    "JUnit.CosTest.testTable.executor": "Run",
-    "JUnit.DomainModelTest.equivalentActionTest.executor": "Run",
-    "JUnit.DomainModelTest.executor": "Run",
-    "JUnit.DomainModelTest.stressLevelDependsOnLightLevelTest.executor": "Run",
-    "JUnit.DomainModelTest.stressLevelRepeatActionDependsOnEntityTest.executor": "Run",
-    "JUnit.MyHashMapTest.executor": "Run",
-    "JUnit.MyHashMapTest.testDelete.executor": "Run",
-    "JUnit.MyHashMapTest.testPrint.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/github_repos/TPO_LABS/lab1/lab1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.All in lab1.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.ApproachActionTest.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.ApproachActionTest.stressLevelApproachActionDependsOnDrunkTest.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.BinarySearchTreeTest.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.BinarySearchTreeTest.testDeleteNodeNonExistsChildren.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.BinarySearchTreeTest.testInsertDuplicate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CosTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CosTest.testCriticalPoint.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CosTest.testPeriod.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CosTest.testTable.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DomainModelTest.equivalentActionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DomainModelTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DomainModelTest.stressLevelDependsOnLightLevelTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DomainModelTest.stressLevelRepeatActionDependsOnEntityTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyHashMapTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyHashMapTest.testDelete.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyHashMapTest.testPrint.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/github_repos/TPO_LABS/lab1/lab1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.All in lab1">
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\github_repos\TPO_LABS\lab1\lab1\src\test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CosTest">
     <configuration name="All in lab1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <option name="PACKAGE_NAME" value="" />
@@ -92,18 +106,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApproachActionTest.stressLevelApproachActionDependsOnDrunkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CosTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="case3.*" />
+          <option name="PATTERN" value="case1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="case3" />
-      <option name="MAIN_CLASS_NAME" value="case3.ApproachActionTest" />
-      <option name="METHOD_NAME" value="stressLevelApproachActionDependsOnDrunkTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="case1" />
+      <option name="MAIN_CLASS_NAME" value="case1.CosTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -141,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CosTest" />
         <item itemvalue="JUnit.All in lab1" />
         <item itemvalue="JUnit.MyHashMapTest" />
         <item itemvalue="JUnit.MyHashMapTest.testPrint" />
         <item itemvalue="JUnit.ApproachActionTest" />
-        <item itemvalue="JUnit.ApproachActionTest.stressLevelApproachActionDependsOnDrunkTest" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +183,10 @@
       <workItem from="1772624576909" duration="29000" />
       <workItem from="1774157338580" duration="15263000" />
       <workItem from="1774242892133" duration="28000" />
-      <workItem from="1774247898346" duration="9830000" />
+      <workItem from="1774247898346" duration="10695000" />
+      <workItem from="1774260116423" duration="152000" />
+      <workItem from="1775053013608" duration="18000" />
+      <workItem from="1775384521171" duration="622000" />
     </task>
     <task id="LOCAL-00001" summary="Реализация бинарного дерева поиска">
       <option name="closed" value="true" />
@@ -332,7 +348,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774258958460</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="fix">
+      <option name="closed" value="true" />
+      <created>1774259416571</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1774259416571</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,13 +379,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/case1/CosTest.java</url>
-          <line>38</line>
+          <line>16</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/case1/CosTest.java</url>
-          <line>82</line>
-          <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/case3/ApproachActionTest.java</url>
@@ -377,6 +396,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/lab1$All_in_lab1.ic" NAME="All in lab1 Coverage Results" MODIFIED="1774258744588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/lab1$All_in_lab1.ic" NAME="All in lab1 Coverage Results" MODIFIED="1774259375950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
