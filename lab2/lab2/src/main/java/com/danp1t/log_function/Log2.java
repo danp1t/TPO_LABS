@@ -1,7 +1,16 @@
 package com.danp1t.log_function;
 
-public class Log2 {
-    public static double calculate(double x, double epsilon) {
-        return Ln.calculate(x, epsilon) / Ln.calculate(2, epsilon);
+import com.danp1t.FunctionInterface;
+
+public class Log2 implements FunctionInterface {
+    private final FunctionInterface ln;
+
+    public Log2(FunctionInterface ln) {
+        this.ln = ln;
+    }
+
+    @Override
+    public double calculate(double x, double epsilon) {
+        return ln.calculate(x, epsilon) / ln.calculate(2, epsilon);
     }
 }

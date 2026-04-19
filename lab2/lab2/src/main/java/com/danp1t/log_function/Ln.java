@@ -1,7 +1,11 @@
 package com.danp1t.log_function;
 
-public class Ln {
-    public static double calculate(double x, double epsilon) {
+import com.danp1t.FunctionInterface;
+
+public class Ln implements FunctionInterface {
+
+    @Override
+    public double calculate(double x, double epsilon) {
         if (epsilon <= 0) {
             throw new IllegalArgumentException("Погрешность должна быть положительной");
         }
