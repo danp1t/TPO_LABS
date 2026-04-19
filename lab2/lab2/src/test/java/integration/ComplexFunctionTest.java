@@ -18,16 +18,16 @@ class ComplexFunctionIntegrationTest {
 
     @BeforeAll
     static void setUp() {
-        FunctionInterface realSin = new SinStub();
-        FunctionInterface realCos = new CosStub();
-        FunctionInterface realTan = new TanStub();
-        FunctionInterface realCot = new CotStub();
-        FunctionInterface realCsc = new CscStub();
-        FunctionInterface realLn = new LnStub();
-        FunctionInterface realLog2 = new Log2Stub();
-        FunctionInterface realLog3 = new Log3Stub();
-        FunctionInterface realLog5 = new Log5Stub();
-        FunctionInterface realLog10 = new Log10Stub();
+        FunctionInterface realSin = new Sin();
+        FunctionInterface realCos = new Cos(realSin);
+        FunctionInterface realTan = new Tan(realSin, realCos);
+        FunctionInterface realCot = new Cot(realSin, realCos);
+        FunctionInterface realCsc = new Csc(realSin);
+        FunctionInterface realLn = new Ln();
+        FunctionInterface realLog2 = new Log2(realLn);
+        FunctionInterface realLog3 = new Log3(realLn);
+        FunctionInterface realLog5 = new Log5(realLn);
+        FunctionInterface realLog10 = new Log10(realLn);
 
         calculator = new ComplexFunction(
                 realSin, realCos, realCsc, realTan, realCot,
@@ -45,7 +45,6 @@ class ComplexFunctionIntegrationTest {
             "0.0, NaN"
     })
     void testTrigonometricBranch(double x, double expected) {
-        System.out.println(3.141592 / 3);
         if (Double.isNaN(expected)) {
             assertThrows(ArithmeticException.class, () -> calculator.calculate(x, EPS));
         } else {
