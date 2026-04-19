@@ -1,3 +1,5 @@
+package module.trig;
+
 import com.danp1t.trigonometric_function.Sin;
 
 public class SinTest {

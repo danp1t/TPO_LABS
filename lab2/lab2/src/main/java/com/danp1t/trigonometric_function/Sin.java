@@ -1,7 +1,10 @@
 package com.danp1t.trigonometric_function;
 
-public class Sin {
-    public static double calculate(double x, double epsilon) {
+import com.danp1t.FunctionInterface;
+
+public class Sin implements FunctionInterface {
+    @Override
+    public double calculate(double x, double epsilon) {
         if (epsilon <= 0) {
             throw new IllegalArgumentException("Погрешность должна быть положительной");
         }
@@ -21,7 +24,7 @@ public class Sin {
         return sum;
     }
 
-    private static double prepareArg(double x) {
+    private double prepareArg(double x) {
         if (x < 0) {
             x = -x;
             x = x % (2 * Math.PI);
