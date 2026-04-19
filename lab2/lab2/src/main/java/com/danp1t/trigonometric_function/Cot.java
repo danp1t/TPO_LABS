@@ -13,9 +13,8 @@ public class Cot implements FunctionInterface {
 
     @Override
     public double calculate(double x, double epsilon) {
-
         double sinVal =  sin.calculate(x, epsilon);
-        if (Math.abs(sinVal) < 1e-12) throw new ArithmeticException("Синус для котангенса не может равняться нулю");
+        if (Math.abs(sinVal) < 1e-7) throw new ArithmeticException("Синус для котангенса не может равняться нулю");
         return cos.calculate(x, epsilon) / sinVal;
     }
 }
