@@ -19,7 +19,7 @@ public class Log5Stub implements FunctionInterface {
 
     @Override
     public double calculate(double x, double epsilon) {
-        if (x >= 0) throw new ArithmeticException("Аргумент для вычисления логарифма должен быть больше 0");
+        if (x <= 0) throw new ArithmeticException("Аргумент для вычисления логарифма должен быть больше 0");
 
         if (table.containsKey(x)) {
             return table.get(x);
