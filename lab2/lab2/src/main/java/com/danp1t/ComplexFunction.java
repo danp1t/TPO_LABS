@@ -42,9 +42,9 @@ public class ComplexFunction implements FunctionInterface {
         double step3 = step2 * cscVal;
         double step4 = step3 / cscVal;
         double step5 = step4 + c;
-        double step6 = step5 / (Math.pow(cscVal, 3) + cscVal);
-        double step7 = Math.pow(step6, 2);
-        double step8 = Math.pow(step7, 2);
+        double step6 = step5 / (cscVal * cscVal * cscVal + cscVal);
+        double step7 =  step6 * step6;
+        double step8 = step7 * step7;
         double step9 = step8 - cscVal*cscVal;
         double step10 = step9 * step9 * step9;
         double step11 = step10 * step10 * step10;
