@@ -27,6 +27,7 @@ class CsvGeneratorTest {
         assertNotNull(CsvGenerator.buildFunction("log3"));
         assertNotNull(CsvGenerator.buildFunction("log5"));
         assertNotNull(CsvGenerator.buildFunction("log10"));
+        assertNotNull(CsvGenerator.buildFunction("666"));
     }
 
     @Test
