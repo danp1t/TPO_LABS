@@ -19,7 +19,12 @@ public class TanStub implements FunctionInterface {
             entry(-3.141592 / 6, -2.0),
             entry(3.0, -0.14255),
             entry(5.0, -3.38052),
-            entry(10.0, 0.64836)
+            entry(10.0, 0.64836),
+            entry(-1.31098, -3.76188),
+            entry(-1.81135, 4.07658),
+            entry(-8.0945353, 4.07658),
+            entry(-4.45257, -3.761835),
+            entry(-4.95294, 4.076628)
     );
 
     @Override

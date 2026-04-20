@@ -4,11 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/danp1t/trigonometric_function/Cos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/danp1t/trigonometric_function/Sin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="8a75281f-d6ed-4198-8e71-4f8eeff8c57d" name="Changes" comment="fix">
+      <change afterPath="$PROJECT_DIR$/src/test/java/integration/AbstractComplexFunctionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/integration/Stage10RealCotTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/integration/Stage11RealLog5Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/integration/Stage1AllStubsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/integration/Stage2RealSinTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/integration/Stage3RealLnTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/integration/Stage4RealCosTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/integration/Stage5RealCscTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/integration/Stage6RealTanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/integration/Stage7RealLog3Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/integration/Stage8RealLog10Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/integration/Stage9RealLog2Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/integration/ComplexFunctionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/module/trig/CosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/module/trig/CosTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stubs/trig/CosStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stubs/trig/CosStub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stubs/trig/CotStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stubs/trig/CotStub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stubs/trig/CscStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stubs/trig/CscStub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stubs/trig/SinStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stubs/trig/SinStub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stubs/trig/TanStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stubs/trig/TanStub.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../template_report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../template_report.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../~$mplate_report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../~$mplate_report.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +37,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -34,125 +53,166 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.All in lab1.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.ApproachActionTest.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.ApproachActionTest.stressLevelApproachActionDependsOnDrunkTest.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.BinarySearchTreeTest.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.BinarySearchTreeTest.testDeleteNodeNonExistsChildren.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.BinarySearchTreeTest.testInsertDuplicate.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CosTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CosTest.testCriticalPoint.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CosTest.testPeriod.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CosTest.testTable.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DomainModelTest.equivalentActionTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DomainModelTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DomainModelTest.stressLevelDependsOnLightLevelTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DomainModelTest.stressLevelRepeatActionDependsOnEntityTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MyHashMapTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MyHashMapTest.testDelete.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MyHashMapTest.testPrint.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/github_repos/TPO_LABS/lab1/lab1&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CsvGenerator.executor": "Run",
+    "Application.SinTest.executor": "Run",
+    "JUnit.AbstractComplexFunctionTest.executor": "Run",
+    "JUnit.All in lab1.executor": "Coverage",
+    "JUnit.ApproachActionTest.executor": "Debug",
+    "JUnit.ApproachActionTest.stressLevelApproachActionDependsOnDrunkTest.executor": "Debug",
+    "JUnit.BinarySearchTreeTest.executor": "Debug",
+    "JUnit.BinarySearchTreeTest.testDeleteNodeNonExistsChildren.executor": "Debug",
+    "JUnit.BinarySearchTreeTest.testInsertDuplicate.executor": "Run",
+    "JUnit.ComplexFunctionIntegrationTest.executor": "Run",
+    "JUnit.ComplexFunctionTest.executor": "Run",
+    "JUnit.CosTest.executor": "Run",
+    "JUnit.CosTest.testCriticalPoint.executor": "Run",
+    "JUnit.CosTest.testPeriod.executor": "Run",
+    "JUnit.CosTest.testTable.executor": "Run",
+    "JUnit.CotTest.executor": "Run",
+    "JUnit.CsvGeneratorTest.executor": "Coverage",
+    "JUnit.CsvGeneratorTest.mainShouldCreateCsvFileWithCorrectContent.executor": "Debug",
+    "JUnit.DomainModelTest.equivalentActionTest.executor": "Run",
+    "JUnit.DomainModelTest.executor": "Run",
+    "JUnit.DomainModelTest.stressLevelDependsOnLightLevelTest.executor": "Run",
+    "JUnit.DomainModelTest.stressLevelRepeatActionDependsOnEntityTest.executor": "Run",
+    "JUnit.Log10Test.executor": "Run",
+    "JUnit.Log5Test.executor": "Run",
+    "JUnit.MyHashMapTest.executor": "Run",
+    "JUnit.MyHashMapTest.testDelete.executor": "Run",
+    "JUnit.MyHashMapTest.testPrint.executor": "Run",
+    "JUnit.SinTest.executor": "Run",
+    "JUnit.SinTest.testPeriod.executor": "Run",
+    "JUnit.SinTest.testSinPi.executor": "Run",
+    "JUnit.Stage10RealCotTest.executor": "Run",
+    "JUnit.Stage11RealLog5Test.executor": "Run",
+    "JUnit.Stage1AllStubsTest.executor": "Run",
+    "JUnit.Stage2RealSinTest.executor": "Run",
+    "JUnit.Stage3RealLnTest.executor": "Run",
+    "JUnit.Stage4RealCosTest.executor": "Run",
+    "JUnit.Stage5RealCscTest.executor": "Run",
+    "JUnit.Stage6RealTanTest.executor": "Run",
+    "JUnit.Stage7RealLog3Test.executor": "Run",
+    "JUnit.Stage8RealLog10Test.executor": "Run",
+    "JUnit.Stage9RealLog2Test.executor": "Run",
+    "JUnit.TanTest.executor": "Run",
+    "JUnit.java in lab2.executor": "Coverage",
+    "JUnit.module in lab2.executor": "Coverage",
+    "JUnit.trig in lab2.executor": "Coverage",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/github_repos/TPO_LABS/lab2/lab2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\github_repos\TPO_LABS\lab1\lab1\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CosTest">
-    <configuration name="All in lab1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApproachActionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab1" />
+  <component name="RunManager" selected="JUnit.Stage11RealLog5Test">
+    <configuration name="Stage10RealCotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="case3.*" />
+          <option name="PATTERN" value="integration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="case3" />
-      <option name="MAIN_CLASS_NAME" value="case3.ApproachActionTest" />
+      <option name="PACKAGE_NAME" value="integration" />
+      <option name="MAIN_CLASS_NAME" value="integration.Stage10RealCotTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CosTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab1" />
+    <configuration name="Stage11RealLog5Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="case1.*" />
+          <option name="PATTERN" value="integration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="case1" />
-      <option name="MAIN_CLASS_NAME" value="case1.CosTest" />
+      <option name="PACKAGE_NAME" value="integration" />
+      <option name="MAIN_CLASS_NAME" value="integration.Stage11RealLog5Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyHashMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab1" />
+    <configuration name="Stage7RealLog3Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="case2.*" />
+          <option name="PATTERN" value="integration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="case2" />
-      <option name="MAIN_CLASS_NAME" value="case2.MyHashMapTest" />
+      <option name="PACKAGE_NAME" value="integration" />
+      <option name="MAIN_CLASS_NAME" value="integration.Stage7RealLog3Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyHashMapTest.testPrint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab1" />
+    <configuration name="Stage8RealLog10Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="case2.*" />
+          <option name="PATTERN" value="integration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="case2" />
-      <option name="MAIN_CLASS_NAME" value="case2.MyHashMapTest" />
-      <option name="METHOD_NAME" value="testPrint" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="integration" />
+      <option name="MAIN_CLASS_NAME" value="integration.Stage8RealLog10Test" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Stage9RealLog2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="integration" />
+      <option name="MAIN_CLASS_NAME" value="integration.Stage9RealLog2Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.Stage10RealCotTest" />
+      <item itemvalue="JUnit.Stage11RealLog5Test" />
+      <item itemvalue="JUnit.Stage7RealLog3Test" />
+      <item itemvalue="JUnit.Stage8RealLog10Test" />
+      <item itemvalue="JUnit.Stage9RealLog2Test" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CosTest" />
-        <item itemvalue="JUnit.All in lab1" />
-        <item itemvalue="JUnit.MyHashMapTest" />
-        <item itemvalue="JUnit.MyHashMapTest.testPrint" />
-        <item itemvalue="JUnit.ApproachActionTest" />
+        <item itemvalue="JUnit.Stage11RealLog5Test" />
+        <item itemvalue="JUnit.Stage10RealCotTest" />
+        <item itemvalue="JUnit.Stage9RealLog2Test" />
+        <item itemvalue="JUnit.Stage8RealLog10Test" />
+        <item itemvalue="JUnit.Stage7RealLog3Test" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +242,12 @@
       <workItem from="1775053013608" duration="18000" />
       <workItem from="1775384521171" duration="739000" />
       <workItem from="1776260401284" duration="87000" />
-      <workItem from="1776260587596" duration="321000" />
+      <workItem from="1776260587596" duration="1193000" />
+      <workItem from="1776504679753" duration="5019000" />
+      <workItem from="1776577858132" duration="27097000" />
+      <workItem from="1776624795477" duration="1468000" />
+      <workItem from="1776662795116" duration="802000" />
+      <workItem from="1776664140871" duration="9167000" />
     </task>
     <task id="LOCAL-00001" summary="Реализация бинарного дерева поиска">
       <option name="closed" value="true" />
@@ -368,25 +433,183 @@
       <option name="project" value="LOCAL" />
       <updated>1776260625855</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="add different function">
+      <option name="closed" value="true" />
+      <created>1776261081656</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1776261081656</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Базовые функции реализовал">
+      <option name="closed" value="true" />
+      <created>1776512625275</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1776512625275</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Реализованы тригонометрические функции">
+      <option name="closed" value="true" />
+      <created>1776513664939</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1776513664939</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Реализованы логарифметические функции">
+      <option name="closed" value="true" />
+      <created>1776513850021</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1776513850021</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Математические ограничения реализовал">
+      <option name="closed" value="true" />
+      <created>1776578111555</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1776578111555</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Внедрил интерфейс">
+      <option name="closed" value="true" />
+      <created>1776579214176</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1776579214176</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Внедрил интерфейс для логарифма">
+      <option name="closed" value="true" />
+      <created>1776579393796</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1776579393796</updated>
+    </task>
+    <task id="LOCAL-00031" summary="fix">
+      <option name="closed" value="true" />
+      <created>1776579578925</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1776579578925</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Реализовал заглушки">
+      <option name="closed" value="true" />
+      <created>1776593200881</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1776593200881</updated>
+    </task>
+    <task id="LOCAL-00033" summary="csvGenerator реализован">
+      <option name="closed" value="true" />
+      <created>1776597726432</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1776597726432</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Модульные тесты готовы для тригонометрических функций">
+      <option name="closed" value="true" />
+      <created>1776599615360</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1776599615360</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Доделал модульные тесты">
+      <option name="closed" value="true" />
+      <created>1776601821037</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1776601821037</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Интеграционные тесты тоже есть">
+      <option name="closed" value="true" />
+      <created>1776606938526</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1776606938526</updated>
+    </task>
+    <task id="LOCAL-00037" summary="fix stub">
+      <option name="closed" value="true" />
+      <created>1776609580038</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1776609580038</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Рубрика эксперименты успешно завершена">
+      <option name="closed" value="true" />
+      <created>1776611725111</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1776611725111</updated>
+    </task>
+    <task id="LOCAL-00039" summary="final commit">
+      <option name="closed" value="true" />
+      <created>1776662811340</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1776662811340</updated>
+    </task>
+    <task id="LOCAL-00040" summary="final">
+      <option name="closed" value="true" />
+      <created>1776664212945</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1776664212945</updated>
+    </task>
+    <task id="LOCAL-00041" summary="fix">
+      <option name="closed" value="true" />
+      <created>1776664302466</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1776664302466</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Реализация бинарного дерева поиска" />
-    <MESSAGE value="test case2 done" />
     <MESSAGE value="Описал доменную модель для задания 3" />
     <MESSAGE value="Тест для CountAction" />
     <MESSAGE value="Тест для равносильности" />
     <MESSAGE value="Покрытие тестами 3 кейса" />
     <MESSAGE value="fix case 2" />
     <MESSAGE value="Добавил поля в модельку" />
-    <MESSAGE value="fix" />
     <MESSAGE value="Сделал параметризованные тесты" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="add different function" />
+    <MESSAGE value="Базовые функции реализовал" />
+    <MESSAGE value="Реализованы тригонометрические функции" />
+    <MESSAGE value="Реализованы логарифметические функции" />
+    <MESSAGE value="Математические ограничения реализовал" />
+    <MESSAGE value="Внедрил интерфейс" />
+    <MESSAGE value="Внедрил интерфейс для логарифма" />
+    <MESSAGE value="Реализовал заглушки" />
+    <MESSAGE value="csvGenerator реализован" />
+    <MESSAGE value="Модульные тесты готовы для тригонометрических функций" />
+    <MESSAGE value="Доделал модульные тесты" />
+    <MESSAGE value="Интеграционные тесты тоже есть" />
+    <MESSAGE value="fix stub" />
+    <MESSAGE value="Рубрика эксперименты успешно завершена" />
+    <MESSAGE value="final commit" />
+    <MESSAGE value="final" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -401,10 +624,29 @@
           <line>29</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/danp1t/ComplexFunction.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/stubs/log/LnStub.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/lab2$java_in_lab2.ic" NAME="java in lab2 Coverage Results" MODIFIED="1776672836483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/lab1$All_in_lab1.ic" NAME="All in lab1 Coverage Results" MODIFIED="1774259375950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/lab2$trig_in_lab2.ic" NAME="trig in lab2 Coverage Results" MODIFIED="1776599292050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/lab2$SinTest.ic" NAME="SinTest Coverage Results" MODIFIED="1776598037759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>module.trig.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lab2$CsvGeneratorTest.ic" NAME="CsvGeneratorTest Coverage Results" MODIFIED="1776601731986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>module.utils.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lab2$module_in_lab2.ic" NAME="module in lab2 Coverage Results" MODIFIED="1776601793239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

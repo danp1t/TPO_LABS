@@ -17,7 +17,12 @@ public class CscStub implements FunctionInterface {
             entry(-3.141592 / 6, -1.73205),
             entry(3.0, 7.08617),
             entry(5.0, -1.04284),
-            entry(10.0, -1.83816)
+            entry(10.0, -1.83816),
+            entry(-1.31098, -1.03473),
+            entry(-1.81135, -1.029647),
+            entry(-8.0945353, -1.029647),
+            entry(-4.45257, 1.034729),
+            entry(-4.95294, 1.029647)
     );
 
     @Override

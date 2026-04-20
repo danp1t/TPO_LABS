@@ -19,7 +19,12 @@ public class SinStub implements FunctionInterface {
             entry(-3.141592 / 6, -0.5),
             entry(3.0, 0.14112),
             entry(5.0, -0.95892),
-            entry(10.0, -0.54402)
+            entry(10.0, -0.54402),
+            entry(-1.31098, -0.966437),
+            entry(-1.81135, -0.971206),
+            entry(-8.0945353, -0.971206),
+            entry(-4.45257, 0.966436),
+            entry(-4.95294, 0.9712068)
     );
 
     @Override

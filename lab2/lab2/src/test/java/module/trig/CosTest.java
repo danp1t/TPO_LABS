@@ -22,7 +22,7 @@ class CosTest {
             "3.141592653589793, -1",
             "-1.5707963267948966, 0",
             "1.0471975511965976, 0.5",
-            "-1.0471975511965976, 0.5"
+            "-1.0471975511965976, 0.5",
     })
     void testBasePoints(double x, double expected) {
         assertEquals(expected, cos.calculate(x, EPS), 1e-9);

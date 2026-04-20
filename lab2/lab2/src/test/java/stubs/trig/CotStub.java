@@ -16,7 +16,12 @@ public class CotStub implements FunctionInterface {
             entry(-3.141592 / 6, 0.86603),
             entry(3.0, -7.01525),
             entry(5.0, -0.29581),
-            entry(10.0, 1.54235)
+            entry(10.0, 1.54235),
+            entry(-1.31098, -0.265825),
+            entry(-1.81135, 0.245304),
+            entry(-8.0945353, 0.245304),
+            entry(-4.45257, -0.265828),
+            entry(-4.95294, 0.245301)
     );
 
     @Override

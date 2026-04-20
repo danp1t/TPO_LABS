@@ -19,6 +19,11 @@ public class CosStub implements FunctionInterface {
             entry(-3.141592 / 6, -0.5),
             entry(3.0, -0.98999),
             entry(5.0, 0.28366),
+            entry(-1.31098, 0.256903),
+            entry(-1.81135, -0.23824),
+            entry(-4.45257, -0.25691),
+            entry(-4.95294, 0.2382378),
+            entry(-8.0945353, -0.23824),
             entry(10.0, -0.83907)
     );
 
