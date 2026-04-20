@@ -1,5 +1,6 @@
 package com.danp1t.utils;
 
+import com.danp1t.ComplexFunction;
 import com.danp1t.FunctionInterface;
 import com.danp1t.log_function.*;
 import com.danp1t.trigonometric_function.*;
@@ -60,6 +61,12 @@ public class CsvGenerator {
             case "log3" -> new Log3(realLn);
             case "log5" -> new Log5(realLn);
             case "log10" -> new Log10(realLn);
+            case "666" -> new ComplexFunction(
+                    realSin, realCos, new Csc(realSin),
+                    new Tan(realSin, realCos), new Cot(realSin, realCos),
+                    realLn, new Log2(realLn), new Log3(realLn),
+                    new Log5(realLn), new Log10(realLn)
+            );
             default -> null;
         };
     }

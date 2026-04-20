@@ -1,6 +1,6 @@
 package com.danp1t;
 
-public class ComplexFunction {
+public class ComplexFunction implements FunctionInterface {
     private final FunctionInterface sin, cos, csc, tan, cot;
     private final FunctionInterface ln, log2, log3, log5, log10;
 
@@ -21,6 +21,7 @@ public class ComplexFunction {
         this.log10 = log10;
     }
 
+    @Override
     public double calculate(double x, double epsilon) {
         if (x <= 0) {
             return calculateTrigonometric(x, epsilon);
