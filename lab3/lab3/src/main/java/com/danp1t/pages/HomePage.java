@@ -99,4 +99,9 @@ public class HomePage extends BasePage {
         flaconTab.click();
         return new FlaconPage(driver);
     }
+
+    public GiftCardPage openGiftCards() {
+        presentCards.click();
+        return new GiftCardPage(driver);
+    }
 }
