@@ -41,10 +41,24 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//a[contains(@href, '/stockists')]")
     private WebElement storyButton;
 
+    @FindBy(xpath = "//*[@id=\"__nuxt\"]/div[2]/header/div[3]/div/nav/ul/li[1]/button")
+    private WebElement categoryLink;
+
+    @FindBy(xpath = "//a[contains(@href, '/tehnika')]")
+    private WebElement firstCategory;
+
+
 
     public HomePage(WebDriver driver) {
         super(driver);
         this.driver = driver;
+    }
+
+    public ProductCardPage selectCategory() {
+        categoryLink.click();
+        wait.until(ExpectedConditions.visibilityOf(firstCategory));
+        firstCategory.click();
+        return new ProductCardPage(driver);
     }
 
     public BrandPage searchBrand() {
