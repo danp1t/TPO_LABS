@@ -41,6 +41,7 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//a[contains(@href, '/stockists')]")
     private WebElement storyButton;
 
+
     public HomePage(WebDriver driver) {
         super(driver);
         this.driver = driver;
@@ -78,5 +79,10 @@ public class HomePage extends BasePage {
 
     public boolean isSearchResultsDisplayed() {
         return wait.until(ExpectedConditions.visibilityOf(searchResultsCount)).isDisplayed();
+    }
+
+    public FlaconPage openFlacon() {
+        flaconTab.click();
+        return new FlaconPage(driver);
     }
 }
