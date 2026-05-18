@@ -59,10 +59,10 @@ public class GiftCardPage extends BasePage {
     @FindBy(xpath = "//*[@id=\"__nuxt\"]/div[2]/aside[9]/div[2]/div/div/div/div/footer/button")
     private WebElement payButton;
 
-    @FindBy(xpath = "//*[@id=\"__nuxt\"]/div[2]/div[26]/aside/div[2]/div/div/div/div/div/div/div[2]/button")
+    @FindBy(xpath = "//*[@id=\"__nuxt\"]/div[2]/div[25]/aside/div[2]/div/div/div/div/div/div/div[2]/button")
     private WebElement continueButton;
 
-    @FindBy(xpath = "//*[@id=\"__nuxt\"]/div[2]/div[26]/aside/div[2]/div/div/div/div/div/div/div[2]/button")
+    @FindBy(xpath = "//*[@id=\"__nuxt\"]/div[2]/div[25]/aside/div[2]/div/div/div/div/div/div/div[2]/button")
     private WebElement continue2Button;
 
     public GiftCardPage(WebDriver driver) {
