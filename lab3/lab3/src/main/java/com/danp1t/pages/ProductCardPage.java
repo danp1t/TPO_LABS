@@ -6,19 +6,15 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class ProductCardPage extends BasePage {
-
-    @FindBy(xpath = "//*[@id=\"__nuxt\"]/div[2]/main/div[3]/div[1]/div[1]/div/div[1]/div/div[1]/div/div/article/div/a/div[2]/div[4]/div/span[2]")
+    @FindBy(xpath = "//*[@id=\"__nuxt\"]/div[2]/main/article/header/div[2]/div/div")
     private WebElement productTitle;
 
-    @FindBy(xpath = "//*[@id=\"__nuxt\"]/div[2]/main/div[3]/div[1]/div[1]/div/div[1]/div/div[1]/div/div/article/div/a/div[2]/div[6]/div/span[1]/div")
+    @FindBy(xpath = "//*[@id=\"__nuxt\"]/div[2]/main/article/div[1]/div[1]/form/div[2]/div[2]/div/div[1]")
     private WebElement productPrice;
-
-    @FindBy(xpath = "//button[contains(text(), 'В корзину')]")
-    private WebElement addToCartButton;
 
     public ProductCardPage(WebDriver driver) {
         super(driver);
-        wait.until(ExpectedConditions.visibilityOf(productTitle));
+        wait.until(ExpectedConditions.visibilityOf(productPrice));
         this.driver = driver;
     }
 
@@ -28,9 +24,5 @@ public class ProductCardPage extends BasePage {
 
     public String getProductPrice() {
         return productPrice.getText();
-    }
-
-    public boolean isAddToCartButtonDisplayed() {
-        return addToCartButton.isDisplayed();
     }
 }

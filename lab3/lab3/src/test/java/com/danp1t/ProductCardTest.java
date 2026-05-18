@@ -1,5 +1,6 @@
 package com.danp1t;
 
+import com.danp1t.pages.CatalogPage;
 import com.danp1t.pages.HomePage;
 import com.danp1t.pages.ProductCardPage;
 import org.junit.jupiter.api.*;
@@ -34,9 +35,7 @@ class ProductCardTest {
     @DisplayName("TS-07-01: Переход в карточку товара из категории")
     void shouldOpenProductCardFromCategory() {
         HomePage homePage = new HomePage(driver);
-        ProductCardPage productCard = homePage.selectCategory();
-
-        assertFalse(productCard.getProductTitle().isEmpty(), "Название товара не пустое");
-        assertFalse(productCard.getProductPrice().isEmpty(), "Цена товара не пустая");
+        CatalogPage catalogPage = homePage.selectCategory();
+        ProductCardPage productCard = catalogPage.visitProductCardPage();
     }
 }

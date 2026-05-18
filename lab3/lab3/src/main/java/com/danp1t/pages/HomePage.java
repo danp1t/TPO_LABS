@@ -54,11 +54,11 @@ public class HomePage extends BasePage {
         this.driver = driver;
     }
 
-    public ProductCardPage selectCategory() {
+    public CatalogPage selectCategory() {
         categoryLink.click();
         wait.until(ExpectedConditions.visibilityOf(firstCategory));
         firstCategory.click();
-        return new ProductCardPage(driver);
+        return new CatalogPage(driver);
     }
 
     public BrandPage searchBrand() {
