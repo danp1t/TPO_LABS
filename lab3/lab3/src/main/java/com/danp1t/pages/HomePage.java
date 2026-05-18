@@ -5,11 +5,23 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import java.util.List;
+
 public class HomePage extends BasePage {
     private final WebDriver driver;
 
     @FindBy(xpath = "//button[contains(@class, 'ga-header__tab_type_search')]")
     private WebElement searchButton;
+
+    @FindBy(xpath = "//input[@placeholder='хочу купить']")
+    private WebElement searchInput;
+
+
+    @FindBy(xpath = "//*[@id=\"__nuxt\"]/div[2]/aside[8]/div[2]/div/div/div/div/div/div[1]/div/div/div/form/div[2]/button[1]")
+    private WebElement searchAcceptButton;
+
+    @FindBy(xpath = "//span[number(@data-category-products-count) > 0]")
+    private WebElement searchResultsCount;
 
     @FindBy(xpath = "//a[contains(@href, '/brands')]")
     private WebElement brandsTab;
@@ -46,7 +58,20 @@ public class HomePage extends BasePage {
         return new AuthorizationPage(driver);
     }
 
+    public void searchProduct(String productName) {
+        searchButton.click();
+        wait.until(ExpectedConditions.visibilityOf(searchInput));
+        typeText(searchInput, productName);
+        wait.until(ExpectedConditions.visibilityOf(searchInput));
+        searchAcceptButton.click();
+        wait.until(ExpectedConditions.visibilityOf(searchResultsCount));
+    }
+
     public boolean isAccountButtonDisplayed() {
         return wait.until(ExpectedConditions.visibilityOf(accountButton)).isDisplayed();
+    }
+
+    public boolean isSearchResultsDisplayed() {
+        return wait.until(ExpectedConditions.visibilityOf(searchResultsCount)).isDisplayed();
     }
 }
