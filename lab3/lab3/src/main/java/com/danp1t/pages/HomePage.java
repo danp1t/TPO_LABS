@@ -5,8 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import java.util.List;
-
 public class HomePage extends BasePage {
     private final WebDriver driver;
 
@@ -15,7 +13,6 @@ public class HomePage extends BasePage {
 
     @FindBy(xpath = "//input[@placeholder='хочу купить']")
     private WebElement searchInput;
-
 
     @FindBy(xpath = "//*[@id=\"__nuxt\"]/div[2]/aside[8]/div[2]/div/div/div/div/div/div[1]/div/div/div/form/div[2]/button[1]")
     private WebElement searchAcceptButton;
@@ -41,6 +38,9 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//*[@id=\"__nuxt\"]/div[2]/div[6]/aside/div[2]/div/div/div/div/div/div[1]/div[3]/div/ul/li[2]/button[1]")
     private WebElement vkAuthButton;
 
+    @FindBy(xpath = "//a[contains(@href, '/stockists')]")
+    private WebElement storyButton;
+
     public HomePage(WebDriver driver) {
         super(driver);
         this.driver = driver;
@@ -65,6 +65,11 @@ public class HomePage extends BasePage {
         wait.until(ExpectedConditions.visibilityOf(searchInput));
         searchAcceptButton.click();
         wait.until(ExpectedConditions.visibilityOf(searchResultsCount));
+    }
+
+    public StoryPage findStory() {
+        storyButton.click();
+        return new StoryPage(driver);
     }
 
     public boolean isAccountButtonDisplayed() {
