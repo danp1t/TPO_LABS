@@ -17,7 +17,7 @@ public class ProductCardPage extends BasePage {
     @FindBy(xpath = "//*[@id=\"__nuxt\"]/div[2]/main/article/div[1]/div[1]/form/div[5]/button")
     private WebElement storeAvailabilityButton;
     
-    @FindBy(xpath = "//*[@id=\"__nuxt\"]/div[2]/aside[5]/div[2]/div/div/div/div/div/div/div[1]/div[1]/div/span")
+    @FindBy(xpath = "//*[@id=\"__nuxt\"]/div[2]/aside[5]/div[2]/div/div/div/div/div/div/div[1]/div[1]/div/input")
     private WebElement currentCity;
 
     public ProductCardPage(WebDriver driver) {
